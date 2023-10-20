@@ -20,12 +20,12 @@ export const NavBar = () => {
             <li className="navbar-item">
                 <Link to="/myteam">My Team</Link>
             </li>
-            {localStorage.getItem("learning_user") ? (
+            {localStorage.getItem("dreams_user") ? (
                 <li className="navbar-item">
                     <Link
                         to=""
                         onClick={() => {
-                            localStorage.removeItem("learning_user")
+                            localStorage.removeItem("dreams_user")
                             navigate("/login", { replace: true })
                         }}
                     >

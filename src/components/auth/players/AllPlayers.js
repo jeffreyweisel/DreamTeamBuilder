@@ -29,7 +29,7 @@ export const PlayerList = ({ currentUser }) => {
                     <div className="posts" key={playerObj.id}>
                         <div>
                             <Link to={`/allplayers/${playerObj.id}`}>
-                                <div className="post-info post-title">{playerObj.name}</div>
+                                <div className="post-info post-title" player={playerObj} >{playerObj.name}</div>
                             </Link>
                         </div>
                         <div className="post-info post-body">{playerObj.position.name}</div>
