@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #4C4C4C;
+    margin: 0;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #F87060;
+  }
+
+  .navbar-item {
+    flex-basis: 20%;
+    list-style-type: none;
+    text-align: center;
+    color: var(--offWhite);
+  }
+
+  .navbar-link {
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .navbar-logout {
+    margin-left: auto;
+  }
+
+  .navbar-link:hover {
+    color: var(--primary);
+  }
+
+  .navbar-img {
+    height: 20px;
+    width: 20px;
+  }
