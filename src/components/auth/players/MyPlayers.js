@@ -8,20 +8,24 @@ export const MyPlayers = ({ currentUser }) => {
     const [myTeam, setMyTeam] = useState([])
     const [myPlayers, setMyPlayers] = useState([])
 
-    useEffect(() => {
-        //fetch all players and set them 
-        getAllPlayers().then((pArray) => {
+    useEffect(() => {       //async and await instead of .then seemed to fix infinite fetch problem
+        const data = async () => {
+            const pArray = await getAllPlayers()
             setPlayers(pArray)
-        }, [])
-    })
+        }
+    
+        data()
+    }, [])
 
     useEffect(() => {
-        //fetch all teams and find the team associated with logged in user.
-        getAllTeams().then((teams) => {
+        const data = async () => {
+            const teams = await getAllTeams()
             const userTeam = teams.find((t) => currentUser.id === t.userId)
             setMyTeam(userTeam)
-        }, [currentUser])
-    })
+        }
+    
+        data()
+    }, [currentUser])
 
     useEffect(() => {
         //filter players based on the teamId of the logged in user's team.

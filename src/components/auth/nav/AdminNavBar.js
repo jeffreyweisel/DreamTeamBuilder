@@ -5,7 +5,7 @@ import "./NavBar.css"
 
 
 
-export const NavBar = () => {
+export const AdminNavBar = () => {
 
     const navigate = useNavigate()
 
@@ -19,6 +19,9 @@ export const NavBar = () => {
             </li>
             <li className="navbar-item">
                 <Link to="/myteam">My Team</Link>
+            </li>
+            <li className="navbar-item">
+                <Link to="/addplayer">Add Player</Link>
             </li>
             {localStorage.getItem("dreams_user") ? (
                 <li className="navbar-item">

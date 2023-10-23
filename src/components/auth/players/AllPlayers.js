@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getAllPlayers } from "../../../services/playerService"
+import { deletePlayer, getAllPlayers } from "../../../services/playerService"
 import { Link } from "react-router-dom"
 import "./Players.css"
 
@@ -19,7 +19,12 @@ export const PlayerList = ({ currentUser }) => {
     }, [])
 
 
-
+    const handleDelete = (playerObj) => {
+        deletePlayer(playerObj).then(res => res.json())
+        .then(() => {
+            getdata()
+        })
+    }
     return (
 
 
@@ -34,6 +39,15 @@ export const PlayerList = ({ currentUser }) => {
                         </div>
                         <div className="post-info post-body">{playerObj.position.name}</div>
                         <div className="post-info post-body">{playerObj.imageUrl}</div>
+                        <div className="btn-container">
+                                {currentUser.id === 1 ? (<button
+                                    className="btn btn-warning"
+                                    onClick={() => handleDelete(playerObj)}
+                                    
+                                >
+                                Delete</button>) : ""
+                                }
+                            </div>
                     </div>
 
                 )
