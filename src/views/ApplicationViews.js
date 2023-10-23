@@ -5,6 +5,7 @@ import { NavBar } from "../components/auth/nav/NavBar"
 import { Welcome } from "../components/auth/welcome/Welcome"
 import { PlayerDetails } from "../components/auth/players/PlayerDetails"
 import { MyPlayers } from "../components/auth/players/MyPlayers"
+import { TeamEditForm } from "../components/forms/TeamEditForm"
 
 
 export const ApplicationViews = () => {
@@ -12,10 +13,10 @@ export const ApplicationViews = () => {
     const [currentUser, setCurrentUser] = useState({})
 
     useEffect(() => {
-        const localHoneyUser = localStorage.getItem("dreams_user")
-        const honeyUserObject = JSON.parse(localHoneyUser)
+        const localDreamUser = localStorage.getItem("dreams_user")
+        const dreamUserObject = JSON.parse(localDreamUser)
 
-        setCurrentUser(honeyUserObject)
+        setCurrentUser(dreamUserObject)
     }, [])
 
 
@@ -39,7 +40,7 @@ export const ApplicationViews = () => {
                 <Route path="myplayers" element={<MyPlayers currentUser={currentUser}/>} />
 
                 <Route path="myteam">
-                    <Route index element={"this is empty"} />
+                    <Route index element={<TeamEditForm currentUser={currentUser}/>} />
                 </Route>
             </Route>
         </Routes>

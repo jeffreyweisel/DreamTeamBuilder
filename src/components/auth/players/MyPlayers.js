@@ -1,64 +1,49 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
 import "./Players.css"
 import { getAllPlayers, getAllTeams } from "../../../services/playerService"
 
-export const MyPlayers = ({currentUser}) => {
-    
-
-
+export const MyPlayers = ({ currentUser }) => {
 
     const [players, setPlayers] = useState([])
+    const [myTeam, setMyTeam] = useState([])
     const [myPlayers, setMyPlayers] = useState([])
-    const [teams, setTeams] = useState([])
 
     useEffect(() => {
+        //fetch all players and set them 
         getAllPlayers().then((pArray) => {
             setPlayers(pArray)
-            console.log("players",pArray)
+        }, [])
+    })
 
-            const myPlayers = players.filter((p) => p.teamId === currentUser.teamId)
-            setMyPlayers(myPlayers)
-        
-        })
-    }, [])
+    useEffect(() => {
+        //fetch all teams and find the team associated with logged in user.
+        getAllTeams().then((teams) => {
+            const userTeam = teams.find((t) => currentUser.id === t.userId)
+            setMyTeam(userTeam)
+        }, [currentUser])
+    })
 
-    // useEffect(() => {
+    useEffect(() => {
+        //filter players based on the teamId of the logged in user's team.
+        if (myTeam) {
+            const playersOnTeam = players.filter((player) => player.teamId === myTeam.id)
+            setMyPlayers(playersOnTeam)
+        }
+    }, [myTeam, players])
 
-    //    getAllTeams().then((tArray) => {
-    //     setTeams(tArray)
-    //     console.log("teams",tArray)
-
-    //    const myTeam = teams.filter((t) => t.userId === currentUser.id)
-    //    setTeams(myTeam)
-    //     console.log(myTeam)
-    //    })
-
-    // }, [])
-
-
-    
-    
-    
     return (
-        
-            <div className="post-container" >
-                {myPlayers.map((p) => {
-                    
-                    return (
-                        <div className="posts"  key={p.id}>
-                            <div>
-                            {p.name}
-                            </div>
-                            
-                        </div>
-                        
-                        
-
-                    )
-                })}
-            </div>
-        
-    )       
-  }                  
+        <div className="post-container">
+            {myTeam && (
+                <div className="post-header" key={myTeam.id}>
+                    <header >{myTeam.name}</header>
+                </div>
+            )}
+            {myPlayers.map((p) => (
+                <div className="posts" key={p.id}>
+                    <div>{p.name}</div>
+                </div>
+            ))}
+        </div>
+    )
+}
 

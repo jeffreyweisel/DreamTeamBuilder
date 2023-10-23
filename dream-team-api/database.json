@@ -1,263 +1,257 @@
 {
-    "players": [
-        {
-            "name": "Tom Brady",
-            "height": "6'4\"",
-            "weight": 225,
-            "fortyTime": "5.28 seconds",
-            "positionId": 1,
-            "teamId": 1,
-            "id": 1
-        },
-        {
-            "name": "Peyton Manning",
-            "height": "6'5\"",
-            "weight": 230,
-            "fortyTime": "5.87 seconds",
-            "positionId": 1,
-            "teamId": 2,
-            "id": 2
-        },
-        {
-            "name": "Aaron Rodgers",
-            "height": "6'2\"",
-            "weight": 225,
-            "fortyTime": "4.71 seconds",
-            "positionId": 1,
-            "teamId": 3,
-            "id": 3
-        },
-        {
-            "name": "Drew Brees",
-            "height": "6'0\"",
-            "weight": 209,
-            "fortyTime": "4.83 seconds",
-            "positionId": 1,
-            "teamId": 0,
-            "id": 4
-        },
-        {
-            "name": "Patrick Mahomes",
-            "height": "6'3\"",
-            "weight": 230,
-            "fortyTime": "4.80 seconds",
-            "positionId": 1,
-            "teamId": 0,
-            "id": 5
-        },
-        {
-            "name": "Emmitt Smith",
-            "height": "5'9\"",
-            "weight": 210,
-            "fortyTime": "4.71 seconds",
-            "positionId": 2,
-            "teamId": 0,
-            "id": 6
-        },
-        {
-            "name": "Walter Payton",
-            "height": "5'10\"",
-            "weight": 205,
-            "fortyTime": "4.45 seconds",
-            "positionId": 2,
-            "teamId": 0,
-            "id": 7
-        },
-        {
-            "name": "Barry Sanders",
-            "height": "5'8\"",
-            "weight": 203,
-            "fortyTime": "4.37 seconds",
-            "positionId": 2, 
-            "teamId": 3,
-            "id": 8
-        },
-        {
-            "name": "Adrian Peterson",
-            "height": "6'1\"",
-            "weight": 220,
-            "fortyTime": "4.40 seconds",
-            "positionId": 2,
-            "teamId":0,
-            "id": 9
-        },
-        {
-            "name": "Christian McCaffrey",
-            "height": "5'11\"",
-            "weight": 205,
-            "fortyTime": "4.49 seconds",
-            "positionId": 2,
-            "teamId": 1,
-            "id": 10
-        },
-        {
-            "name": "Julio Jones",
-            "height": "6'3\"",
-            "weight": 220,
-            "fortyTime": "4.39 seconds",
-            "positionId": 3,
-            "teamId": 2,
-            "id": 11 
-        },
-        {
-            "name": "DeAndre Hopkins",
-            "height": "6'1\"",
-            "weight": 212,
-            "fortyTime": "4.57 seconds",
-            "positionId": 3,
-            "teamId": 0,
-            "id": 12
-        },
-        {
-            "name": "Tyreek Hill",
-            "height": "5'10\"",
-            "weight": 185,
-            "fortyTime": "4.24 seconds",
-            "positionId": 3,
-            "teamId": 1,
-            "id": 13
-        },
-        {
-            "name": "Stefon Diggs",
-            "height": "6'0\"",
-            "weight": 191,
-            "fortyTime": "4.46 seconds",
-            "positionId": 3,
-            "teamId": 1,
-            "id": 14
-        },
-        {
-            "name": "Michael Thomas",
-            "height": "6'3\"",
-            "weight": 212,
-            "fortyTime": "4.57 seconds",
-            "positionId": 3,
-            "teamId": 2,
-            "id": 15
-        },
-        {
-            "name": "Calvin Johnson",
-            "height": "6'5\"",
-            "weight": 237,
-            "fortyTime": "4.35 seconds",
-            "positionId": 3,
-            "teamId": 0,
-            "id": 16
-        },
-        {
-            "name": "Rob Gronkowski",
-            "height": "6'6\"",
-            "weight": 265,
-            "fortyTime": "4.68 seconds",
-            "positionId": 4, 
-            "teamId": 0,
-            "id": 17
-        },
-        {
-            "name": "Travis Kelce",
-            "height": "6'5\"",
-            "weight": 260,
-            "fortyTime": "4.61 seconds",
-            "positionId": 4,
-            "teamId": 0,
-            "id": 18
-        },
-        {
-            "name": "George Kittle",
-            "height": "6'4\"",
-            "weight": 250,
-            "fortyTime": "4.52 seconds",
-            "positionId": 4,
-            "teamId": 1,
-            "id": 19
-        },
-        {
-            "name": "Zach Ertz",
-            "height": "6'5\"",
-            "weight": 250,
-            "fortyTime": "4.76 seconds",
-            "positionId": 4,
-            "teamId": 3,
-            "id": 20
-        },
-        {
-            "name": "Darren Waller",
-            "height": "6'6\"",
-            "weight": 255,
-            "fortyTime": "4.45 seconds",
-            "positionId": 4,
-            "teamId": 2,
-            "id": 21
-        },
-        {
-            "name": "Hunter Henry",
-            "height": "6'5\"",
-            "weight": 250,
-            "fortyTime": "4.72 seconds",
-            "positionId": 4, 
-            "teamId": 0,
-            "id": 22
-        }
-    ],
-    "positions": [
-        {
-            "id": 1,
-            "name": "Quarterback"
-        },
-        {
-            "id": 2,
-            "name": "Running Back"
-        },
-        {
-            "id": 3,
-            "name": "Wide Receiver"
-        },
-        {
-            "id": 4,
-            "name": "Tight End"
-        }
-    ],
-    "teams": [
-        {
-            "id": 1,
-            "name": "Gridiron Gladiators"
-            
-        },
-        {
-            "id": 2,
-            "name": "Fantasy Titans"
-            
-        },
-        {
-            "id": 3,
-            "name": "Drafter's Dream Team"
-            
-        }
-    ],
-    "users": [
-        {
-            "id": 1,
-            "name": "Jeffrey",
-            "email": "jeffrey@example.com",
-            "isAdmin": true,
-            "teamId": 1
-            
-        },
-        {
-            "id": 2,
-            "name": "Zach",
-            "email": "zach@example.com",
-            "isAdmin": false,
-            "teamId": 2
-            
-        },
-        {
-            "id": 3,
-            "name": "Keith",
-            "email": "keith@example.com",
-            "isAdmin": false,
-            "teamId": 3
-            
-        }
-    ]
+  "players": [
+    {
+      "name": "Tom Brady",
+      "height": "6'4\"",
+      "weight": 225,
+      "fortyTime": "5.28 seconds",
+      "positionId": 1,
+      "teamId": 1,
+      "id": 1
+    },
+    {
+      "name": "Peyton Manning",
+      "height": "6'5\"",
+      "weight": 230,
+      "fortyTime": "5.87 seconds",
+      "positionId": 1,
+      "teamId": 2,
+      "id": 2
+    },
+    {
+      "name": "Aaron Rodgers",
+      "height": "6'2\"",
+      "weight": 225,
+      "fortyTime": "4.71 seconds",
+      "positionId": 1,
+      "teamId": 3,
+      "id": 3
+    },
+    {
+      "name": "Drew Brees",
+      "height": "6'0\"",
+      "weight": 209,
+      "fortyTime": "4.83 seconds",
+      "positionId": 1,
+      "teamId": 0,
+      "id": 4
+    },
+    {
+      "name": "Patrick Mahomes",
+      "height": "6'3\"",
+      "weight": 230,
+      "fortyTime": "4.80 seconds",
+      "positionId": 1,
+      "teamId": 0,
+      "id": 5
+    },
+    {
+      "name": "Emmitt Smith",
+      "height": "5'9\"",
+      "weight": 210,
+      "fortyTime": "4.71 seconds",
+      "positionId": 2,
+      "teamId": 0,
+      "id": 6
+    },
+    {
+      "name": "Walter Payton",
+      "height": "5'10\"",
+      "weight": 205,
+      "fortyTime": "4.45 seconds",
+      "positionId": 2,
+      "teamId": 0,
+      "id": 7
+    },
+    {
+      "name": "Barry Sanders",
+      "height": "5'8\"",
+      "weight": 203,
+      "fortyTime": "4.37 seconds",
+      "positionId": 2,
+      "teamId": 3,
+      "id": 8
+    },
+    {
+      "name": "Adrian Peterson",
+      "height": "6'1\"",
+      "weight": 220,
+      "fortyTime": "4.40 seconds",
+      "positionId": 2,
+      "teamId": 0,
+      "id": 9
+    },
+    {
+      "name": "Christian McCaffrey",
+      "height": "5'11\"",
+      "weight": 205,
+      "fortyTime": "4.49 seconds",
+      "positionId": 2,
+      "teamId": 1,
+      "id": 10
+    },
+    {
+      "name": "Julio Jones",
+      "height": "6'3\"",
+      "weight": 220,
+      "fortyTime": "4.39 seconds",
+      "positionId": 3,
+      "teamId": 2,
+      "id": 11
+    },
+    {
+      "name": "DeAndre Hopkins",
+      "height": "6'1\"",
+      "weight": 212,
+      "fortyTime": "4.57 seconds",
+      "positionId": 3,
+      "teamId": 0,
+      "id": 12
+    },
+    {
+      "name": "Tyreek Hill",
+      "height": "5'10\"",
+      "weight": 185,
+      "fortyTime": "4.24 seconds",
+      "positionId": 3,
+      "teamId": 1,
+      "id": 13
+    },
+    {
+      "name": "Stefon Diggs",
+      "height": "6'0\"",
+      "weight": 191,
+      "fortyTime": "4.46 seconds",
+      "positionId": 3,
+      "teamId": 1,
+      "id": 14
+    },
+    {
+      "name": "Michael Thomas",
+      "height": "6'3\"",
+      "weight": 212,
+      "fortyTime": "4.57 seconds",
+      "positionId": 3,
+      "teamId": 2,
+      "id": 15
+    },
+    {
+      "name": "Calvin Johnson",
+      "height": "6'5\"",
+      "weight": 237,
+      "fortyTime": "4.35 seconds",
+      "positionId": 3,
+      "teamId": 0,
+      "id": 16
+    },
+    {
+      "name": "Rob Gronkowski",
+      "height": "6'6\"",
+      "weight": 265,
+      "fortyTime": "4.68 seconds",
+      "positionId": 4,
+      "teamId": 0,
+      "id": 17
+    },
+    {
+      "name": "Travis Kelce",
+      "height": "6'5\"",
+      "weight": 260,
+      "fortyTime": "4.61 seconds",
+      "positionId": 4,
+      "teamId": 0,
+      "id": 18
+    },
+    {
+      "name": "George Kittle",
+      "height": "6'4\"",
+      "weight": 250,
+      "fortyTime": "4.52 seconds",
+      "positionId": 4,
+      "teamId": 1,
+      "id": 19
+    },
+    {
+      "name": "Zach Ertz",
+      "height": "6'5\"",
+      "weight": 250,
+      "fortyTime": "4.76 seconds",
+      "positionId": 4,
+      "teamId": 3,
+      "id": 20
+    },
+    {
+      "name": "Darren Waller",
+      "height": "6'6\"",
+      "weight": 255,
+      "fortyTime": "4.45 seconds",
+      "positionId": 4,
+      "teamId": 2,
+      "id": 21
+    },
+    {
+      "name": "Hunter Henry",
+      "height": "6'5\"",
+      "weight": 250,
+      "fortyTime": "4.72 seconds",
+      "positionId": 4,
+      "teamId": 0,
+      "id": 22
+    }
+  ],
+  "positions": [
+    {
+      "id": 1,
+      "name": "Quarterback"
+    },
+    {
+      "id": 2,
+      "name": "Running Back"
+    },
+    {
+      "id": 3,
+      "name": "Wide Receiver"
+    },
+    {
+      "id": 4,
+      "name": "Tight End"
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "new name",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "Fantasy Titans",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "name": "Drafter's Dream Team",
+      "userId": 3
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Jeffrey",
+      "email": "jeffrey@example.com",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "name": "Zach",
+      "email": "zach@example.com",
+      "isAdmin": false
+    },
+    {
+      "id": 3,
+      "name": "Keith",
+      "email": "keith@example.com",
+      "isAdmin": false
+    }
+  ]
 }
