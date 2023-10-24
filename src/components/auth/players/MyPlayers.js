@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import "./Players.css"
 import { getAllPlayers, getAllTeams } from "../../../services/playerService"
+import { Link } from "react-router-dom"
+
 
 export const MyPlayers = ({ currentUser }) => {
 
@@ -44,7 +46,9 @@ export const MyPlayers = ({ currentUser }) => {
             )}
             {myPlayers.map((p) => (
                 <div className="posts" key={p.id}>
-                    <div>{p.name}</div>
+                    <Link to={`/allplayers/${p.id}`}>
+                                <div className="post-info post-title" player={p} >{p.name}</div>
+                            </Link>
                 </div>
             ))}
         </div>

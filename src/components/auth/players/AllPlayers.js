@@ -20,11 +20,16 @@ export const PlayerList = ({ currentUser }) => {
 
 
     const handleDelete = (playerObj) => {
-        deletePlayer(playerObj).then(res => res.json())
+        deletePlayer(playerObj)
         .then(() => {
             getdata()
         })
     }
+    
+    
+    
+    
+    
     return (
 
 
@@ -47,6 +52,7 @@ export const PlayerList = ({ currentUser }) => {
                                 >
                                 Delete</button>) : ""
                                 }
+                                
                             </div>
                     </div>
 

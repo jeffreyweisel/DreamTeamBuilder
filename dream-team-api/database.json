@@ -33,7 +33,7 @@
       "weight": 209,
       "fortyTime": "4.83 seconds",
       "positionId": 1,
-      "teamId": 0,
+      "teamId": 1,
       "id": 4
     },
     {
@@ -42,7 +42,7 @@
       "weight": 230,
       "fortyTime": "4.80 seconds",
       "positionId": 1,
-      "teamId": 0,
+      "teamId": 3,
       "id": 5
     },
     {
@@ -51,7 +51,7 @@
       "weight": 210,
       "fortyTime": "4.71 seconds",
       "positionId": 2,
-      "teamId": 0,
+      "teamId": 2,
       "id": 6
     },
     {
@@ -60,7 +60,7 @@
       "weight": 205,
       "fortyTime": "4.45 seconds",
       "positionId": 2,
-      "teamId": 0,
+      "teamId": 1,
       "id": 7
     },
     {
@@ -78,7 +78,7 @@
       "weight": 220,
       "fortyTime": "4.40 seconds",
       "positionId": 2,
-      "teamId": 0,
+      "teamId": 1,
       "id": 9
     },
     {
@@ -105,7 +105,7 @@
       "weight": 212,
       "fortyTime": "4.57 seconds",
       "positionId": 3,
-      "teamId": 0,
+      "teamId": 1,
       "id": 12
     },
     {
@@ -141,7 +141,7 @@
       "weight": 237,
       "fortyTime": "4.35 seconds",
       "positionId": 3,
-      "teamId": 0,
+      "teamId": 1,
       "id": 16
     },
     {
@@ -150,7 +150,7 @@
       "weight": 265,
       "fortyTime": "4.68 seconds",
       "positionId": 4,
-      "teamId": 0,
+      "teamId": 2,
       "id": 17
     },
     {
@@ -159,17 +159,8 @@
       "weight": 260,
       "fortyTime": "4.61 seconds",
       "positionId": 4,
-      "teamId": 0,
+      "teamId": 3,
       "id": 18
-    },
-    {
-      "name": "George Kittle",
-      "height": "6'4\"",
-      "weight": 250,
-      "fortyTime": "4.52 seconds",
-      "positionId": 4,
-      "teamId": 1,
-      "id": 19
     },
     {
       "name": "Zach Ertz",
@@ -190,22 +181,13 @@
       "id": 21
     },
     {
-      "name": "Hunter Henry",
-      "height": "6'5\"",
-      "weight": 250,
-      "fortyTime": "4.72 seconds",
-      "positionId": 4,
-      "teamId": 0,
-      "id": 22
-    },
-    {
-      "name": "keith",
+      "name": "Bo Jackson",
       "height": "6'",
       "weight": "234",
-      "fortyTime": "4.4",
+      "fortyTime": "4.38",
       "teamId": 0,
-      "positionId": 4,
-      "id": 23
+      "positionId": 2,
+      "id": 22
     }
   ],
   "positions": [
@@ -229,7 +211,7 @@
   "teams": [
     {
       "id": 1,
-      "name": "new name",
+      "name": "team one",
       "userId": 1
     },
     {
