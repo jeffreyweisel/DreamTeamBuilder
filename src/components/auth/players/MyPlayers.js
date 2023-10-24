@@ -15,7 +15,7 @@ export const MyPlayers = ({ currentUser }) => {
             const pArray = await getAllPlayers()
             setPlayers(pArray)
         }
-    
+
         data()
     }, [])
 
@@ -25,7 +25,7 @@ export const MyPlayers = ({ currentUser }) => {
             const userTeam = teams.find((t) => currentUser.id === t.userId)
             setMyTeam(userTeam)
         }
-    
+
         data()
     }, [currentUser])
 
@@ -38,19 +38,29 @@ export const MyPlayers = ({ currentUser }) => {
     }, [myTeam, players])
 
     return (
-        <div className="post-container">
-            {myTeam && (
-                <div className="post-header" key={myTeam.id}>
-                    <header >{myTeam.name}</header>
-                </div>
-            )}
-            {myPlayers.map((p) => (
-                <div className="posts" key={p.id}>
-                    <Link to={`/allplayers/${p.id}`}>
-                                <div className="post-info post-title" player={p} >{p.name}</div>
-                            </Link>
-                </div>
-            ))}
+        <div>
+
+            <div>
+                {myTeam && (
+                    <div className="team-hdr" key={myTeam.id}>
+                        <header >{myTeam.name}</header>
+                    </div>
+                )}
+            </div>
+
+            <div className="post-container">
+
+
+                {myPlayers.map((p) => (
+                    <div className="posts" key={p.id}>
+                        <img className="player-img" src={p.imageLink} alt="playerimg" />
+                        <Link to={`/allplayers/${p.id}`}>
+                            <div className="post-info post-title" player={p} >{p.name}</div>
+                        </Link>
+
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

@@ -1,11 +1,11 @@
 .navbar {
     display: flex;
     flex-wrap: nowrap;
-    background-color: #4C4C4C;
+    background-color: black;
     margin: 0;
     width: 100%;
     padding: 0.5rem;
-    border: 2px solid #0B4F6C;
+    border: 1px solid #9C0A07;
   }
 
   .navbar-item {
@@ -13,6 +13,7 @@
     list-style-type: none;
     text-align: center;
     color: var(--offWhite);
+    justify-content: space-evenly;
   }
 
   .navbar-link {
@@ -29,7 +30,9 @@
     color: var(--primary);
   }
 
-  .navbar-img {
+  .nav-img {
     height: 20px;
     width: 20px;
   }
+
+  

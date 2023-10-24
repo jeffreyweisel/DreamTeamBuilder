@@ -18,6 +18,7 @@ export const PlayerDetails = () => {
     }, [playerId])
 
     return <div className="posts">
+         <img className="playerdetails-img" src={player.imageLink} alt="playerimg"/>
         <header className="posts-info post-body post-header">
             {player.name}
         </header>

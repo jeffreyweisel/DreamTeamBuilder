@@ -21,45 +21,55 @@ export const PlayerList = ({ currentUser }) => {
 
     const handleDelete = (playerObj) => {
         deletePlayer(playerObj)
-        .then(() => {
-            getdata()
-        })
+            .then(() => {
+                getdata()
+            })
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     return (
 
 
         <div className="post-container" >
+            
             {players.map((playerObj) => {
                 return (
+                    
+                        
                     <div className="posts" key={playerObj.id}>
-                        <div>
-                            <Link to={`/allplayers/${playerObj.id}`}>
-                                <div className="post-info post-title" player={playerObj} >{playerObj.name}</div>
-                            </Link>
-                        </div>
+
+                        <img className="player-img" src={playerObj.imageLink} alt="playerimg" />
+                        <Link to={`/allplayers/${playerObj.id}`}>
+                            <div className="post-info post-title" player={playerObj} >{playerObj.name}</div>
+                        </Link>
                         <div className="post-info post-body">{playerObj.position.name}</div>
-                        <div className="post-info post-body">{playerObj.imageUrl}</div>
+
                         <div className="btn-container">
-                                {currentUser.id === 1 ? (<button
-                                    className="btn btn-warning"
-                                    onClick={() => handleDelete(playerObj)}
-                                    
-                                >
+                            {playerObj.teamId === 0 ? (<button
+                                className=" btn-delete"
+
+
+                            >
+                                Add Player</button>) : ""
+                            }
+                            {currentUser.id === 1 ? (<button
+                                className="btn btn-delete"
+                                onClick={() => handleDelete(playerObj)}
+
+                            >
                                 Delete</button>) : ""
-                                }
-                                
-                            </div>
+                            }
+
+                        </div>
                     </div>
 
+            
                 )
             })}
         </div>
-
     )
 }
 

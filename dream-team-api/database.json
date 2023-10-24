@@ -7,7 +7,8 @@
       "fortyTime": "5.28 seconds",
       "positionId": 1,
       "teamId": 1,
-      "id": 1
+      "id": 1,
+      "imageLink": "https://media.cnn.com/api/v1/images/stellar/prod/200616165901-03-tom-brady-buccaneers-uniform.jpg?q=w_1600,h_1071,x_0,y_0,c_fill"
     },
     {
       "name": "Peyton Manning",
@@ -16,7 +17,8 @@
       "fortyTime": "5.87 seconds",
       "positionId": 1,
       "teamId": 2,
-      "id": 2
+      "id": 2,
+      "imageLink": "https://cbs4indy.com/wp-content/uploads/sites/22/2021/02/GettyImages-93078553-e1626727052404.jpg?w=1280"
     },
     {
       "name": "Aaron Rodgers",
@@ -25,7 +27,8 @@
       "fortyTime": "4.71 seconds",
       "positionId": 1,
       "teamId": 3,
-      "id": 3
+      "id": 3,
+      "imageLink": "https://gray-kttc-prod.cdn.arcpublishing.com/resizer/Q_qykj5nuldFpqZuAZLao2kCfiM=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/UHCP7NCANJCUZHEYFU3O5IZAYU.jpg"
     },
     {
       "name": "Drew Brees",
@@ -34,7 +37,8 @@
       "fortyTime": "4.83 seconds",
       "positionId": 1,
       "teamId": 1,
-      "id": 4
+      "id": 4,
+      "imageLink": "https://www.denverpost.com/wp-content/uploads/2016/10/drew-brees.jpg?w=1024"
     },
     {
       "name": "Patrick Mahomes",
@@ -42,8 +46,9 @@
       "weight": 230,
       "fortyTime": "4.80 seconds",
       "positionId": 1,
-      "teamId": 3,
-      "id": 5
+      "teamId": 2,
+      "id": 5,
+      "imageLink": "https://i.insider.com/65046de6956dba001ace5b2d?width=700"
     },
     {
       "name": "Emmitt Smith",
@@ -51,8 +56,9 @@
       "weight": 210,
       "fortyTime": "4.71 seconds",
       "positionId": 2,
-      "teamId": 2,
-      "id": 6
+      "teamId": 3,
+      "id": 6,
+      "imageLink": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/qbe0mor3xebl2am8xve2"
     },
     {
       "name": "Walter Payton",
@@ -61,7 +67,8 @@
       "fortyTime": "4.45 seconds",
       "positionId": 2,
       "teamId": 1,
-      "id": 7
+      "id": 7,
+      "imageLink": "https://cdn.theathletic.com/app/uploads/2019/05/23132459/GettyImages-593284854-e1585662416308.jpg"
     },
     {
       "name": "Barry Sanders",
@@ -69,8 +76,9 @@
       "weight": 203,
       "fortyTime": "4.37 seconds",
       "positionId": 2,
-      "teamId": 3,
-      "id": 8
+      "teamId": 2,
+      "id": 8,
+      "imageLink": "https://cdn.vox-cdn.com/thumbor/t8R4BdSD5t8605Az1nSErPJ0qNM=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/20087060/79574798.jpg.jpg"
     },
     {
       "name": "Adrian Peterson",
@@ -78,8 +86,9 @@
       "weight": 220,
       "fortyTime": "4.40 seconds",
       "positionId": 2,
-      "teamId": 1,
-      "id": 9
+      "teamId": 3,
+      "id": 9,
+      "imageLink": "https://cdn.vox-cdn.com/thumbor/EU8frjOvn-R4OjZ5Hm4vUt6JatA=/0x0:4000x2667/1400x1050/filters:focal(0x0:4000x2667):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/1098847/152646762.0.jpg"
     },
     {
       "name": "Christian McCaffrey",
@@ -88,7 +97,8 @@
       "fortyTime": "4.49 seconds",
       "positionId": 2,
       "teamId": 1,
-      "id": 10
+      "id": 10,
+      "imageLink": "https://www.sportsnet.ca/wp-content/uploads/2023/10/Christian-McCaffrey-2-1040x572.jpg"
     },
     {
       "name": "Julio Jones",
@@ -97,7 +107,8 @@
       "fortyTime": "4.39 seconds",
       "positionId": 3,
       "teamId": 2,
-      "id": 11
+      "id": 11,
+      "imageLink": "https://cdn.vox-cdn.com/thumbor/oq3Q-jXVYrJMKclN6Xf7B-pmEk8=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22642366/1178248851.jpg"
     },
     {
       "name": "DeAndre Hopkins",
@@ -105,8 +116,9 @@
       "weight": 212,
       "fortyTime": "4.57 seconds",
       "positionId": 3,
-      "teamId": 1,
-      "id": 12
+      "teamId": 3,
+      "id": 12,
+      "imageLink": "https://www.boston.com/wp-content/uploads/2023/01/Patriots_Cardinals_Football_44421-63bf5f6462707-scaled.jpg"
     },
     {
       "name": "Tyreek Hill",
@@ -115,7 +127,8 @@
       "fortyTime": "4.24 seconds",
       "positionId": 3,
       "teamId": 1,
-      "id": 13
+      "id": 13,
+      "imageLink": "https://www.fanduel.com/research/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fpbwem9y5%2Fch_production%2F8e106cbbc16dbe59305ba23f3ffbfb5c6dcbc4d4-3309x2206.jpg%3Frect%3D0%2C0%2C3309%2C1637%26w%3D964%26h%3D477&w=1920&q=100"
     },
     {
       "name": "Stefon Diggs",
@@ -123,8 +136,9 @@
       "weight": 191,
       "fortyTime": "4.46 seconds",
       "positionId": 3,
-      "teamId": 1,
-      "id": 14
+      "teamId": 2,
+      "id": 14,
+      "imageLink": "https://s.yimg.com/ny/api/res/1.2/0RMaP4OMrvLg_6QMeVwQYQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://media.zenfs.com/en/buffalo_bills_wire_usa_today_sports_articles_253/bb2e1775252f0a9dca1df4475b3abd6f"
     },
     {
       "name": "Michael Thomas",
@@ -132,8 +146,9 @@
       "weight": 212,
       "fortyTime": "4.57 seconds",
       "positionId": 3,
-      "teamId": 2,
-      "id": 15
+      "teamId": 3,
+      "id": 15,
+      "imageLink": "https://static.www.nfl.com/image/private/t_editorial_landscape_12_desktop/league/qtuhvqdo0ifi33tjtyhm"
     },
     {
       "name": "Calvin Johnson",
@@ -142,7 +157,8 @@
       "fortyTime": "4.35 seconds",
       "positionId": 3,
       "teamId": 1,
-      "id": 16
+      "id": 16,
+      "imageLink": "https://www.si.com/.image/t_share/MTY4MjU5MDU4OTY5MjI1MTE3/image-placeholder-title.jpg"
     },
     {
       "name": "Rob Gronkowski",
@@ -151,7 +167,8 @@
       "fortyTime": "4.68 seconds",
       "positionId": 4,
       "teamId": 2,
-      "id": 17
+      "id": 17,
+      "imageLink": "https://cdn.vox-cdn.com/thumbor/ydftRtpLBBm8H7RJZk1ZwhiGm5Y=/0x0:3000x1997/1200x800/filters:focal(1316x310:1796x790)/cdn.vox-cdn.com/uploads/chorus_image/image/72756071/1080312044.0.jpg"
     },
     {
       "name": "Travis Kelce",
@@ -160,16 +177,8 @@
       "fortyTime": "4.61 seconds",
       "positionId": 4,
       "teamId": 3,
-      "id": 18
-    },
-    {
-      "name": "Zach Ertz",
-      "height": "6'5\"",
-      "weight": 250,
-      "fortyTime": "4.76 seconds",
-      "positionId": 4,
-      "teamId": 3,
-      "id": 20
+      "id": 18,
+      "imageLink": "https://i.guim.co.uk/img/media/147832dea0d9a7ea742a127e38a6f0edb3c37406/0_74_3437_2063/master/3437.jpg?width=465&dpr=1&s=none"
     },
     {
       "name": "Darren Waller",
@@ -177,51 +186,53 @@
       "weight": 255,
       "fortyTime": "4.45 seconds",
       "positionId": 4,
-      "teamId": 2,
-      "id": 21
+      "teamId": 1,
+      "id": 21,
+      "imageLink": "https://cloudfront-us-east-1.images.arcpublishing.com/ajc/Y3ANE2KDOHX4JTXV73W6JEAGEE.jpg"
     },
     {
-      "name": "Bo Jackson",
-      "height": "6'",
-      "weight": "234",
-      "fortyTime": "4.38",
+      "name": "Justin Jefferson",
+      "height": "6'1\"",
+      "weight": "205",
+      "fortyTime": "4.4",
       "teamId": 0,
-      "positionId": 2,
+      "positionId": 3,
+      "imageLink": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2038,h_1146,x_890,y_124/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/63/01hd7p5nbrfzjtnq40c2.jpg",
       "id": 22
     }
   ],
   "positions": [
     {
       "id": 1,
-      "name": "Quarterback"
+      "name": "QB"
     },
     {
       "id": 2,
-      "name": "Running Back"
+      "name": "RB"
     },
     {
       "id": 3,
-      "name": "Wide Receiver"
+      "name": "WR"
     },
     {
       "id": 4,
-      "name": "Tight End"
+      "name": "TE"
     }
   ],
   "teams": [
     {
       "id": 1,
-      "name": "team one",
+      "name": "TEAM 1",
       "userId": 1
     },
     {
       "id": 2,
-      "name": "Fantasy Titans",
+      "name": "TEAM 2",
       "userId": 2
     },
     {
       "id": 3,
-      "name": "team dos",
+      "name": "TEAM 3",
       "userId": 3
     }
   ],

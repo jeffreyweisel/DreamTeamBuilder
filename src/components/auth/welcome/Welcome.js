@@ -9,7 +9,6 @@ export const Welcome = () => {
                 <span>Welcome To </span>
                 <span>Dream Team Builder</span>
             </h1>
-            <div>A space where you can create a team from todays game and yesterdays</div>
         </div>
     )
 }

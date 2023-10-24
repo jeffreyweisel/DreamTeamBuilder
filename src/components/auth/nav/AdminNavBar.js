@@ -11,6 +11,9 @@ export const AdminNavBar = () => {
 
     return (
         <ul className="navbar">
+            <li>
+            <img className="navbar-item nav-img" src="https://dejpknyizje2n.cloudfront.net/svgcustom/clipart/preview/stylized-football-outline-sticker-31413-550x550.png" alt="football"/>
+            </li>
             <li className="navbar-item">
                 <Link to="/allplayers">All Players</Link>
             </li>

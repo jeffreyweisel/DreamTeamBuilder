@@ -49,7 +49,7 @@ export const Login = () => {
           </fieldset>
           <fieldset className="auth-fieldset">
             <div>
-              <button type="submit">Sign in</button>
+              <button className="submit" type="submit">Sign in</button>
             </div>
           </fieldset>
         </form>

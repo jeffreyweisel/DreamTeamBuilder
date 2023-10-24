@@ -21,7 +21,7 @@ export const NonAdminNavBar = () => {
                 <Link to="/myteam">My Team</Link>
             </li>
             {localStorage.getItem("dreams_user") ? (
-                <li className="navbar-item">
+                <li className="navbar-item navbar-logout">
                     <Link
                         to=""
                         onClick={() => {

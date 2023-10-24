@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react"
-
 import "./Forms.css"
 import { useNavigate } from "react-router-dom"
 import { addNewPlayer, getAllPositions } from "../../services/playerService"
 
-export const NewPlayerForm = ({ currentUser }) => {
+export const NewPlayerForm = () => {
 
     const navigate = useNavigate()
 
@@ -17,7 +16,8 @@ export const NewPlayerForm = ({ currentUser }) => {
         weight: '',
         fortyTime: '',
         teamId: 0,
-        positionId: 0
+        positionId: 0,
+        imageLink: ''
     })
 
 
@@ -127,8 +127,19 @@ export const NewPlayerForm = ({ currentUser }) => {
             </fieldset>
             <fieldset>
                 <div className="form-group">
+                    <label>Image</label>
+                    <input type="text"
+                        value={newPlayer.imageLink}
+                        onChange={handleInputChange}
+                        required
+                        className="form-control"
+                        name="imageLink" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <div className="form-group">
                     <button
-                        className="form-btn btn-secondary"
+                        className="form-btn btn-primary"
                         onClick={handleSave}
                     >
                         Save Player

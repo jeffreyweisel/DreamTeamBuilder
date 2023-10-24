@@ -13,17 +13,22 @@
     margin: 10px;
     padding: 20px;
     background-color: var(--white);
-    border: 3px solid #0B4F6C;
+    border: 3px solid #9C0A07;
     border-radius: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
   }
   
   .post-title {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-decoration: underline;
+    font-weight: bold;
   }
   
   .post-body {
       margin-bottom: 15px;
+      
+      text-transform: capitalize;
   }
   
   
@@ -65,7 +70,7 @@
     
     font-family: "Roboto", sans-serif;
     text-transform: capitalize;
-    font-weight: bold;
+    font-weight: bolder;
     
   }
   
@@ -73,6 +78,7 @@
     font-size: larger;
     font-weight: bolder;
     justify-content: center;
+    text-shadow: white;
   
   }
   
@@ -88,4 +94,46 @@
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+  }
+
+  .btn-delete {
+    background-color: var(--white);
+    color: black;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+
+.player-img{
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 20px;
+  }
+
+  .playerdetails-img {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-hdr {
+    font-size: larger;
+    font-weight: bolder;
+    justify-content: center;
+    text-shadow: white;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow:
+		-1px -1px 0 #fcf9f9,
+		1px -1px 0 #fcf9f9,
+		-1px 1px 0 #fcf9f9,
+		1px 1px 0 #fcf9f9;
+    font-size: 50px;
   }
