@@ -41,21 +41,21 @@ export const MyPlayers = ({ currentUser }) => {
         <div>
 
             <div>
-                {myTeam && (
+                {myTeam ? (        //check for myTeam being defined = true
                     <div className="team-hdr" key={myTeam.id}>
                         <header >{myTeam.name}</header>
                     </div>
+                ) : (
+                    ""
                 )}
             </div>
 
-            <div className="post-container">
-
-
+            <div className="player-container">
                 {myPlayers.map((p) => (
-                    <div className="posts" key={p.id}>
+                    <div className="players" key={p.id}>
                         <img className="player-img" src={p.imageLink} alt="playerimg" />
                         <Link to={`/allplayers/${p.id}`}>
-                            <div className="post-info post-title" player={p} >{p.name}</div>
+                            <div className="player-info player-title" player={p} >{p.name}</div>
                         </Link>
 
                     </div>
@@ -64,4 +64,6 @@ export const MyPlayers = ({ currentUser }) => {
         </div>
     )
 }
+
+
 

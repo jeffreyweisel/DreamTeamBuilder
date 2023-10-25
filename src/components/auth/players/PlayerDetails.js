@@ -17,20 +17,20 @@ export const PlayerDetails = () => {
         })
     }, [playerId])
 
-    return <div className="posts">
+    return <div className="players">
          <img className="playerdetails-img" src={player.imageLink} alt="playerimg"/>
-        <header className="posts-info post-body post-header">
+        <header className="players-info player-body player-header">
             {player.name}
         </header>
-        <div className="posts-info post-body">
+        <div className="players-info player-body">
             <span> Height: </span>
             {player.height}
         </div>
-        <div className="posts-info post-body">
+        <div className="players-info player-body">
             <span> Weight: </span>
             {player.weight}
         </div>
-        <div className="posts-info post-body">
+        <div className="players-info player-body">
             <span> 40 time: </span>
             {player.fortyTime}
         </div>

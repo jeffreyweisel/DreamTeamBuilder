@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react"
-import { deletePlayer, getAllPlayers } from "../../../services/playerService"
+import { addPlayerToTeam, deletePlayer, getAllPlayers } from "../../../services/playerService"
 import { Link, useNavigate } from "react-router-dom"
 import "./Players.css"
 
 
 export const PlayerList = ({ currentUser }) => {
 
-
-    const navigate = useNavigate()
     const [players, setPlayers] = useState([])
+    const navigate = useNavigate()
 
     const getdata = () => {
         getAllPlayers().then((pArray) => {
@@ -28,24 +27,49 @@ export const PlayerList = ({ currentUser }) => {
             })
     }
 
+    const handlePlayerAddToTeam = (player) => {
+        const playerUpdate = {
+            name: player.name,
+            height: player.height,
+            weight: player.weight,
+            fortyTime: player.fortyTime,
+            positionId: player.positionId,
+            teamId: currentUser.id,
+            id: player.id,
+            imageLink: player.imageLink
+        }
+      
+        addPlayerToTeam(playerUpdate)
+          .then(() => {
+            console.log(playerUpdate)
+            navigate('/myplayers')
+          })
+      }
+
 
     return (
 
 
-        <div className="post-container" >
-
+        <div className="player-container" >
             {players.map((playerObj) => {
                 return (
 
-                    <div className="posts" key={playerObj.id}>
+                    <div className="players" key={playerObj.id}>
 
                         <img className="player-img" src={playerObj.imageLink} alt="playerimg" />
                         <Link to={`/allplayers/${playerObj.id}`}>
-                            <div className="post-info post-title" player={playerObj} >{playerObj.name}</div>
+                            <div className="player-info player-title" player={playerObj} >{playerObj?.name}</div>
                         </Link>
-                        <div className="post-info post-body player-pos">{playerObj.position.name}</div>
-                        <div className="post-info post-body">{playerObj.team.name}</div>
+                        <div className="player-info player-body player-pos">{playerObj?.position.name}</div>
+                        <div className="player-info player-body">{playerObj?.team?.name}</div>
                         <div className="btn-container">
+                        {playerObj.teamId === 0 ? (<button
+                                className="btn btn-delete"
+                                onClick={() => handlePlayerAddToTeam(playerObj)}
+
+                            >
+                                ADD PLAYER</button>) : ""
+                            }
                             {currentUser.id === 1 ? (<button
                                 className="btn btn-delete"
                                 onClick={() => handleDelete(playerObj)}
@@ -53,7 +77,7 @@ export const PlayerList = ({ currentUser }) => {
                             >
                                 DELETE</button>) : ""
                             }
-
+                            
                         </div>
                     </div>
 
@@ -63,6 +87,7 @@ export const PlayerList = ({ currentUser }) => {
         </div>
     )
 }
+
 
 
 

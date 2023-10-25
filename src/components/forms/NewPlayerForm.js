@@ -15,7 +15,7 @@ export const NewPlayerForm = () => {
         height: '',
         weight: '',
         fortyTime: '',
-        teamId: Math.floor(Math.random() * 3) + 1,
+        teamId: 0,  //generates random number between 1 and 3
         positionId: 0,
         imageLink: ''
     })
@@ -39,13 +39,15 @@ export const NewPlayerForm = () => {
     }
 
     const handleSave = (event) => {
-        event.preventDefault()
-        console.log('Clicked')
+        if (selectedPosition) {
+            event.preventDefault()
+            console.log('Clicked')
 
-        addNewPlayer(newPlayer).then(() => {
-            navigate(`/allplayers`)
-        })
+            addNewPlayer(newPlayer).then(() => {
+                navigate(`/allplayers`)
+            })
 
+        }
     }
 
     //update positionId in newPlayer when the user selects a position
@@ -64,7 +66,7 @@ export const NewPlayerForm = () => {
                 <div className="form-group">
                     {/* the dropdown selector */}
                     <select
-                        className="post-select"
+                        className="player-select"
                         onChange={(event) => setSelectedPosition(event.target.value)
                         }
                         value={selectedPosition}

@@ -186,39 +186,9 @@
       "weight": 255,
       "fortyTime": "4.45 seconds",
       "positionId": 4,
-      "teamId": 1,
+      "teamId": 2,
       "id": 21,
       "imageLink": "https://cloudfront-us-east-1.images.arcpublishing.com/ajc/Y3ANE2KDOHX4JTXV73W6JEAGEE.jpg"
-    },
-    {
-      "name": "George Washigton",
-      "height": "6'",
-      "weight": "234",
-      "fortyTime": "4.38",
-      "teamId": 2,
-      "positionId": 1,
-      "imageLink": "data:image/jpeg;base64,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",
-      "id": 22
-    },
-    {
-      "name": "Mike Tren",
-      "height": "5'6",
-      "weight": "215",
-      "fortyTime": "4.5",
-      "teamId": 3,
-      "positionId": 2,
-      "imageLink": "https://i1.sndcdn.com/artworks-gtzJW8Ci2KbCziW6-whmWFA-t500x500.jpg",
-      "id": 23
-    },
-    {
-      "name": "Chris Tren",
-      "height": "5'6",
-      "weight": "205",
-      "fortyTime": "4.4",
-      "teamId": 1,
-      "positionId": 2,
-      "imageLink": "https://i1.sndcdn.com/artworks-9LzoaI80SbWE9IyD-Epohyw-t500x500.jpg",
-      "id": 24
     }
   ],
   "positions": [
@@ -237,6 +207,10 @@
     {
       "id": 4,
       "name": "TE"
+    },
+    {
+      "id": 5,
+      "name": "DEF"
     }
   ],
   "teams": [
