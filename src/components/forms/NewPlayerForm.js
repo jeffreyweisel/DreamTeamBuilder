@@ -15,7 +15,7 @@ export const NewPlayerForm = () => {
         height: '',
         weight: '',
         fortyTime: '',
-        teamId: 0,
+        teamId: Math.floor(Math.random() * 3) + 1,
         positionId: 0,
         imageLink: ''
     })
@@ -48,11 +48,11 @@ export const NewPlayerForm = () => {
 
     }
 
-    // Update topicId in newPost when the user selects a topic
+    //update positionId in newPlayer when the user selects a position
     useEffect(() => {
         setNewPlayer({
             ...newPlayer,
-            positionId: parseInt(selectedPosition)      //spread operator to change topicId on onChange 
+            positionId: parseInt(selectedPosition)      //spread operator to change positionId on onChange 
         })
     }, [selectedPosition])
 

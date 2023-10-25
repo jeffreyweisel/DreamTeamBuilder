@@ -50,7 +50,7 @@ export const TeamEditForm = ({ currentUser }) => {
                     <label>Team Name: </label>
                     <input
                         type="text"
-                        // value={team.name ? team.name : ''}
+                        value={team.name ? team.name : ''}
                         onChange={handleInputChange}
                         required
                         className="form-control"

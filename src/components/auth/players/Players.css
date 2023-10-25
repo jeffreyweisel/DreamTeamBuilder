@@ -1,11 +1,11 @@
 .post-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; /* Distribute items evenly in rows */
+    justify-content: space-evenly; 
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 1rem auto; /* Center the container horizontally */
-    max-width: 1900px; /* Set a maximum width for the container */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1rem auto; 
+    max-width: 1900px; 
   }
   
   .posts {
@@ -22,7 +22,8 @@
   .post-title {
     margin-bottom: 10px;
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: larger;
   }
   
   .post-body {
@@ -45,10 +46,9 @@
   .post-select, .post-input {
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
-    border: 1px solid var(--outline);
-    border-radius: 0.25rem;
+    border: 1px solid black;
     margin-left: auto;
-    border-radius: 25px;
+    border-radius: 50px;
   }
   
   .post-h1 {
@@ -68,7 +68,7 @@
   
   .posts-info {
     
-    font-family: "Roboto", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     text-transform: capitalize;
     font-weight: bolder;
     
@@ -100,15 +100,18 @@
     background-color: var(--white);
     color: black;
     text-decoration: underline;
-    font-weight: bolder;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    
   }
 
 .player-img{
-    width: 200px;
+    width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 2px solid black;
     margin-bottom: 20px;
+    object-fit: cover;
   }
 
   .playerdetails-img {
@@ -122,8 +125,10 @@
   .btn-container {
     display: flex;
     flex-direction: column;
+    
   }
   .team-hdr {
+    font-family: 'Courier New', Courier, monospace;
     font-size: larger;
     font-weight: bolder;
     justify-content: center;
@@ -136,4 +141,14 @@
 		-1px 1px 0 #fcf9f9,
 		1px 1px 0 #fcf9f9;
     font-size: 50px;
+  }
+
+  .team-img {
+    height: 150px;
+    width: 200px;
+  }
+  
+  .player-pos {
+    font-weight: bold;
+    font-size: large;
   }
