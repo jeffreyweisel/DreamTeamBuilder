@@ -37,18 +37,20 @@
   .player-search {
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
-    /* border: 1px solid var(--outline); */
     border-radius: 0.25rem;
   
   }
   
   
   .player-select, .player-input {
-    padding: 0.375rem 0.75rem;
+    margin-top: 15px;
     font-size: 1rem;
-    border: 1px solid black;
-    margin-left: auto;
-    border-radius: 50px;
+    border: 2px solid #9C0A07;
+    border-radius: 0.25rem;
+    margin-left: 40px;
+    border-radius: 10px;
+    justify-content: right;
+    padding: 15px;
   }
   
   .player-h1 {
@@ -63,7 +65,13 @@
   
   .filter-bar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    
+    /* background-color: #9C0A07;
+    border-radius: 10px;
+    border-bottom: 3px solid white; */
+    
+    
   }
   
   .players-info {
@@ -154,4 +162,19 @@
   .player-pos {
     font-weight: bold;
     font-size: large;
+  }
+
+  .freeagent-btn {
+    margin-top: 15px;
+    width: 172px;
+    height: 58px;
+    margin-top: 15px;
+    font-size: 1rem;
+   
+    border-radius: 0.25rem;
+    margin-left: 40px;
+    border-radius: 10px;
+    justify-content: right;
+    padding: 15px;
+   
   }

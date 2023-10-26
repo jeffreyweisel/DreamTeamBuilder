@@ -11,7 +11,7 @@ font-family: "Roboto", sans-serif;
 /* Feel free to change these values and create your own color palette! https://coolors.co/ is a great resource */
 :root {
   --primary: #9C0A07;
-  --secondary: #00a6ed;
+  --secondary: black;
   --info: #7fb800;
   --warning: #f6511d;
   --white: #ffffff;
@@ -73,17 +73,17 @@ button {
   background-color: var(--primary);
 }
 
-.btn-primary:hover {
+/* .btn-primary:hover {
   background-color: #e5a000;
-}
+} */
 
 .btn-secondary {
   background-color: var(--secondary);
 }
 
-.btn-secondary:hover {
-  background-color: #0097d7;
-}
+/* .btn-secondary:hover {
+  background-color: #9C0A07;
+} */
 
 .btn-warning {
   background-color: var(--warning);
