@@ -123,6 +123,7 @@
     border-radius: 10px;
     margin-bottom: 20px;
     border: 1px solid black;
+    object-fit: cover;
   }
   .btn-container {
     display: flex;
