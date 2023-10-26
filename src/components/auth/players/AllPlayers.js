@@ -20,15 +20,18 @@ export const PlayerList = ({ currentUser }) => {
     }, [])
 
 
-    const handleDelete = (playerObj) => {
-        deletePlayer(playerObj)
-            .then(() => {
-                getdata()
-            })
+    const handleDelete = (player) => {
+        
+            deletePlayer(player.id)
+                .then(() => {
+                    getdata()
+                })
+
+        
     }
 
     const handlePlayerAddToTeam = (player) => {
-        const playerUpdate = {
+        const newPlayerTeam = {
             name: player.name,
             height: player.height,
             weight: player.weight,
@@ -39,9 +42,9 @@ export const PlayerList = ({ currentUser }) => {
             imageLink: player.imageLink
         }
       
-        addPlayerToTeam(playerUpdate)
+        addPlayerToTeam(newPlayerTeam)
           .then(() => {
-            console.log(playerUpdate)
+            console.log(newPlayerTeam)
             navigate('/myplayers')
           })
       }

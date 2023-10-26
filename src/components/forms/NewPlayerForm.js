@@ -15,7 +15,7 @@ export const NewPlayerForm = () => {
         height: '',
         weight: '',
         fortyTime: '',
-        teamId: 0,  //generates random number between 1 and 3
+        teamId: 0,  
         positionId: 0,
         imageLink: ''
     })

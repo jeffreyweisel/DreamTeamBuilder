@@ -39,14 +39,9 @@ export const addNewPlayer = (newPlayer) => {
     }).then((res) => res.json())
 }
 
-export const deletePlayer = (player) => {
-    return fetch(`http://localhost:8088/players/${player.id}`, {
-        method: "DELETE",
-        headers: {
-            "Content-Type": "application/json",
-
-        }
-
+export const deletePlayer = (playerId) => {
+    return fetch(`http://localhost:8088/players/${playerId}`, {
+        method: "DELETE"
     })
 }
 

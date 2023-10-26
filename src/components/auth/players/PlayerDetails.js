@@ -8,7 +8,7 @@ export const PlayerDetails = () => {
 
     const [player, setPlayer] = useState({})
 
-    const { playerId } = useParams()
+    const { playerId } = useParams()    //key value pairs based on the playerId in the url
 
     useEffect(() => {
         getPlayerById(playerId).then((data) => {
