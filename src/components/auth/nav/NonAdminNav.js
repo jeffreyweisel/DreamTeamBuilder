@@ -12,16 +12,16 @@ export const NonAdminNavBar = () => {
     return (
         <ul className="navbar">
             <li className="navbar-item">
-                <Link to="/allplayers">All Players</Link>
+                <Link to="/allplayers">Players</Link>
             </li>
             <li className="navbar-item">
-                <Link to="/myplayers">My Players</Link>
+                <Link to="/myplayers">My Lineup</Link>
             </li>
             <li className="navbar-item">
-                <Link to="/myteam">My Team</Link>
+                <Link to="/myteam">Manage</Link>
             </li>
             {localStorage.getItem("dreams_user") ? (
-                <li className="navbar-item navbar-logout">
+                <li className="navbar-item">
                     <Link
                         to=""
                         onClick={() => {

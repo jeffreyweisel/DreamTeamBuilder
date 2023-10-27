@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react"
 import "./Players.css"
-import { getAllPlayers, getAllTeams } from "../../../services/playerService"
-import { Link } from "react-router-dom"
+import { cutPlayer, getAllPlayers, getAllTeams } from "../../../services/playerService"
+import { Link, useNavigate } from "react-router-dom"
 
 
 export const MyPlayers = ({ currentUser }) => {
 
+    const navigate = useNavigate()
     const [players, setPlayers] = useState([])
     const [myTeam, setMyTeam] = useState([])
     const [myPlayers, setMyPlayers] = useState([])
@@ -19,6 +20,7 @@ export const MyPlayers = ({ currentUser }) => {
         data()
     }, [])
 
+    
     useEffect(() => {
         const data = async () => {
             const teams = await getAllTeams()
@@ -37,6 +39,25 @@ export const MyPlayers = ({ currentUser }) => {
         }
     }, [myTeam, players])
 
+    
+    const handlePlayerCut = (player) => {
+        const noTeamForYou = {
+            id: player.id,
+            name: player.name,
+            teamId: 0,
+            positionId: player.positionId,
+            height: player.height,
+            weight: player.weight,
+            fortyTime: player.fortyTime,
+            imageLink: player.imageLink,
+            collegeAttended: player.collegeAttended
+        }
+        cutPlayer(noTeamForYou).then(() => {
+            const updatedMyTeam = myPlayers.filter((p) => p.id !== player.id)  //checks that p.id that was cut is not = any of the players left on the team
+            setMyPlayers(updatedMyTeam)
+        })
+    }
+    
     return (
         <div>
 
@@ -57,6 +78,13 @@ export const MyPlayers = ({ currentUser }) => {
                         <Link to={`/allplayers/${p.id}`}>
                             <div className="player-info player-title" player={p} >{p.name}</div>
                         </Link>
+                        {p.teamId === currentUser.id ? (<button
+                                    className="btn btn-delete"
+                                    onClick={() => handlePlayerCut(p)}
+
+                                >
+                                    CUT PLAYER</button>) : ""
+                                }
 
                     </div>
                 ))}

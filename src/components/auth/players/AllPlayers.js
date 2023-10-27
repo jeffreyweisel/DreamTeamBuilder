@@ -43,7 +43,7 @@ export const PlayerList = ({ currentUser }) => {
         getAllPositions().then((posArray) => {
             setPositions(posArray)
         })
-    })
+    }, [])
 
 
     useEffect(() => {
@@ -84,7 +84,8 @@ export const PlayerList = ({ currentUser }) => {
             positionId: player.positionId,
             teamId: currentUser.id,
             id: player.id,
-            imageLink: player.imageLink
+            imageLink: player.imageLink,
+            collegeAttended: player.collegeAttended
         }
 
         addPlayerToTeam(newPlayerTeam)
@@ -123,7 +124,7 @@ export const PlayerList = ({ currentUser }) => {
                         value={selectedPosition}
                         className="player-select"
                     >
-                        <option value="">Select a position</option>
+                        <option value="">Positions</option>
                         {positions.map((pos) => (
                             <option key={pos.id}
                                 value={pos.id}>
@@ -139,49 +140,50 @@ export const PlayerList = ({ currentUser }) => {
                             setFreeAgents(!freeAgents) //toggle the state
                         }}
                     >
-                        {freeAgents ? "Free Agents" : "All Players"}
+                        {freeAgents ? "All Players" : "Free Agents"}
                     </button>
                 </div>
-                </div>
-
-
-                <div className="player-container" >
-                    {filteredPlayers.map((playerObj) => {
-                        return (
-
-                            <div className="players" key={playerObj.id}>
-
-                                <img className="player-img" src={playerObj.imageLink} alt="playerimg" />
-                                <Link to={`/allplayers/${playerObj.id}`}>
-                                    <div className="player-info player-title" player={playerObj} >{playerObj?.name}</div>
-                                </Link>
-                                <div className="player-info player-body player-pos">{playerObj?.position.name}</div>
-                                <div className="player-info player-body">{playerObj?.team?.name}</div>
-                                <div className="btn-container">
-                                    {playerObj.teamId === 0 ? (<button
-                                        className="btn btn-delete"
-                                        onClick={() => handlePlayerAddToTeam(playerObj)}
-
-                                    >
-                                        ADD PLAYER</button>) : ""
-                                    }
-                                    {currentUser.id === 1 ? (<button
-                                        className="btn btn-delete"
-                                        onClick={() => handleDelete(playerObj)}
-
-                                    >
-                                        DELETE</button>) : ""
-                                    }
-
-                                </div>
-                            </div>
-
-
-                        )
-                    })}
-                </div>
             </div>
-            )
+
+
+            <div className="player-container" >
+                {filteredPlayers.map((playerObj) => {
+                    return (
+
+                        <div className="players" key={playerObj.id}>
+
+                            <img className="player-img" src={playerObj.imageLink} alt="playerimg" />
+                            <Link to={`/allplayers/${playerObj.id}`}>
+                                <div className="player-info player-title" player={playerObj} >{playerObj?.name}</div>
+                            </Link>
+                            <div className="player-info player-body player-pos">{playerObj?.position.name}</div>
+                            <div className="player-info player-body">{playerObj?.team?.name}</div>
+                            <div className="btn-container">
+                                {playerObj.teamId === 0 ? (<button
+                                    className="btn btn-delete"
+                                    onClick={() => handlePlayerAddToTeam(playerObj)}
+
+                                >
+                                    ADD PLAYER</button>) : ""
+                                }
+                                {currentUser.id === 1 ? (<button
+                                    className="btn btn-delete"
+                                    onClick={() => handleDelete(playerObj)}
+
+                                >
+                                    DELETE</button>) : ""
+                                }
+                                
+
+                            </div>
+                        </div>
+
+
+                    )
+                })}
+            </div>
+        </div>
+    )
 }
 
 

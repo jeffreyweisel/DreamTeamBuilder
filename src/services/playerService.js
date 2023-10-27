@@ -3,7 +3,7 @@ export const getAllPlayers = () => {
 }
 
 export const getPlayerById = (playerId) => {
-    return fetch(`http://localhost:8088/players?id=${playerId}`).then(res => res.json())
+    return fetch(`http://localhost:8088/players?id=${playerId}&_expand=team`).then(res => res.json())
 }
 
 export const getAllTeams = () => {
@@ -46,6 +46,16 @@ export const deletePlayer = (playerId) => {
 }
 
 export const addPlayerToTeam = (player) => {
+    return fetch(`http://localhost:8088/players/${player.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(player),
+    }).then((response) => response.json())
+}
+
+export const cutPlayer = (player) => {
     return fetch(`http://localhost:8088/players/${player.id}`, {
         method: "PUT",
         headers: {

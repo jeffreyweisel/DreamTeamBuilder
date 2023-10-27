@@ -17,6 +17,7 @@
     border-radius: 10px;
     padding-left: 4px;
     padding-right: 4px;
+    padding-bottom: 20px;
   }
   
   .player-title {
@@ -65,7 +66,7 @@
   
   .filter-bar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
     /* background-color: #9C0A07;
     border-radius: 10px;
@@ -102,6 +103,7 @@
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+    transition: all ease-in-out 150ms;
   }
 
   .btn-delete {
@@ -120,11 +122,12 @@
     border: 2px solid black;
     margin-bottom: 20px;
     object-fit: cover;
+    transition: all ease-in-out 150ms;
   }
 
   .playerdetails-img {
     width: 200px;
-    height: 140px;
+    height: 160px;
     float: left;
     margin-left: 20px;
     margin-right: 20px;
@@ -132,6 +135,7 @@
     margin-bottom: 20px;
     border: 1px solid black;
     object-fit: cover;
+    margin-top: 10px;
   }
   .btn-container {
     display: flex;
@@ -178,3 +182,20 @@
     padding: 15px;
    
   }
+
+  .playerdetails-img:hover {
+    width: 320px;
+    height: 280px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    object-fit: cover;
+    animation: tilt-shaking 0.25s infinite;
+    transition: all ease-in-out 250ms;
+  }
+
+  .btn-delete:hover {
+    transition: all ease-in-out 150ms;
+  }
+
+  

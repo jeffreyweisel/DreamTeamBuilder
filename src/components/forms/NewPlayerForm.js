@@ -15,9 +15,10 @@ export const NewPlayerForm = () => {
         height: '',
         weight: '',
         fortyTime: '',
-        teamId: 0,  
+        teamId: 0,
         positionId: 0,
-        imageLink: ''
+        imageLink: '',
+        collegeAttended: ''
     })
 
 
@@ -64,27 +65,27 @@ export const NewPlayerForm = () => {
             <h2>New Player</h2>
             <fieldset>
                 <div className="form-group">
-                    {/* the dropdown selector */}
-                    <select
-                        className="player-select"
-                        onChange={(event) => setSelectedPosition(event.target.value)
-                        }
-                        value={selectedPosition}
-                        required
-                    >
-                        <option value=''>Select a position</option>
-                        {positions.map((p) => (
-                            <option key={p.id}
-                                value={p.id}>
+                    {/* the radio button selector */}
+                    <p>Position:</p>
+                    {positions.map((p) => (
+                        <div key={p.id} className="radio">
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="selectedPosition"
+                                    value={p.id}
+                                    checked={selectedPosition == p.id}
+                                    onChange={(event) => setSelectedPosition(event.target.value)}
+                                />
                                 {p.name}
-                            </option>
-                        ))}
-                    </select>
+                            </label>
+                        </div>
+                    ))}
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
-                    <label>Name</label>
+                    <label>Name:</label>
                     <input
                         type="text"
                         value={newPlayer.name}
@@ -96,7 +97,7 @@ export const NewPlayerForm = () => {
             </fieldset>
             <fieldset>
                 <div className="form-group">
-                    <label>Height</label>
+                    <label>Height:</label>
                     <input type="text"
                         value={newPlayer.height}
                         onChange={handleInputChange}
@@ -107,7 +108,7 @@ export const NewPlayerForm = () => {
             </fieldset>
             <fieldset>
                 <div className="form-group">
-                    <label>Weight</label>
+                    <label>Weight:</label>
                     <input type="text"
                         value={newPlayer.weight}
                         onChange={handleInputChange}
@@ -118,7 +119,7 @@ export const NewPlayerForm = () => {
             </fieldset>
             <fieldset>
                 <div className="form-group">
-                    <label>40 Yard Dash</label>
+                    <label>40 Yard Dash:</label>
                     <input type="text"
                         value={newPlayer.fortyTime}
                         onChange={handleInputChange}
@@ -129,13 +130,24 @@ export const NewPlayerForm = () => {
             </fieldset>
             <fieldset>
                 <div className="form-group">
-                    <label>Image</label>
+                    <label>Image:</label>
                     <input type="text"
                         value={newPlayer.imageLink}
                         onChange={handleInputChange}
                         required
                         className="form-control"
                         name="imageLink" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <div className="form-group">
+                    <label>College:</label>
+                    <input type="text"
+                        value={newPlayer.collegeAttended}
+                        onChange={handleInputChange}
+                        required
+                        className="form-control"
+                        name="collegeAttended" />
                 </div>
             </fieldset>
             <fieldset>

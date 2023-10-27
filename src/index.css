@@ -11,7 +11,7 @@ font-family: "Roboto", sans-serif;
 /* Feel free to change these values and create your own color palette! https://coolors.co/ is a great resource */
 :root {
   --primary: #9C0A07;
-  --secondary: black;
+  --secondary: #292929;
   --info: #7fb800;
   --warning: #f6511d;
   --white: #ffffff;

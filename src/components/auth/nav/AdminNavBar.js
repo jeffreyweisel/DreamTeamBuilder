@@ -11,20 +11,17 @@ export const AdminNavBar = () => {
 
     return (
         <ul className="navbar">
-            <li>
-            <img className="navbar-item nav-img" src="https://dejpknyizje2n.cloudfront.net/svgcustom/clipart/preview/stylized-football-outline-sticker-31413-550x550.png" alt="football"/>
+            <li className="navbar-item">
+                <Link to="/allplayers">Players</Link>
             </li>
             <li className="navbar-item">
-                <Link to="/allplayers">All Players</Link>
+                <Link to="/myplayers">Lineup</Link>
             </li>
             <li className="navbar-item">
-                <Link to="/myplayers">My Players</Link>
+                <Link to="/myteam">Manage</Link>
             </li>
             <li className="navbar-item">
-                <Link to="/myteam">My Team</Link>
-            </li>
-            <li className="navbar-item">
-                <Link to="/addplayer">Add Player</Link>
+                <Link to="/addplayer">New Player</Link>
             </li>
             {localStorage.getItem("dreams_user") ? (
                 <li className="navbar-item">

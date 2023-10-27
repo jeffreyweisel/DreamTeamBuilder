@@ -18,21 +18,30 @@ export const PlayerDetails = () => {
     }, [playerId])
 
     return <div className="players">
-         <img className="playerdetails-img" src={player.imageLink} alt="playerimg"/>
+         <img className="playerdetails-img" src={player?.imageLink} alt="playerimg"/>
         <header className="players-info player-body player-header">
-            {player.name}
+            {player?.name}
         </header>
+       
+        <div className="players-info player-body">
+            <span> College: </span>
+            {player?.collegeAttended}
+        </div>
+        <div className="players-info player-body">
+            <span> Current Team: </span>
+            {player?.team?.name ? player.team.name: "Free Agent"}
+        </div>
         <div className="players-info player-body">
             <span> Height: </span>
-            {player.height}
+            {player?.height}
         </div>
         <div className="players-info player-body">
             <span> Weight: </span>
-            {player.weight}
+            {player?.weight}
         </div>
         <div className="players-info player-body">
             <span> 40 time: </span>
-            {player.fortyTime}
+            {player?.fortyTime}
         </div>
 
     </div>
