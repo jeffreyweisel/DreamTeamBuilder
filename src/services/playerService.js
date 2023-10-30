@@ -64,3 +64,8 @@ export const cutPlayer = (player) => {
         body: JSON.stringify(player),
     }).then((response) => response.json())
 }
+
+export const getTeamById = (teamId) => {
+    return fetch(`http://localhost:8088/teams?id=${teamId}&_embed=players`).then(res => res.json())
+}
+

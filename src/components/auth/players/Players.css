@@ -5,11 +5,11 @@
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     margin: 1rem auto; 
-    max-width: 1900px; 
+    max-width: 1750px; 
   }
   
   .players {
-    flex: 0 0 20%; /* Each player takes up 20% of the container's width */
+    flex: 0 0 18%; /* Each player takes up 20% of the container's width */
     margin: 10px;
     padding: 20px;
     background-color: var(--white);
@@ -67,6 +67,7 @@
   .filter-bar {
     display: flex;
     flex-direction: row;
+    margin-left: 40px;
     
     /* background-color: #9C0A07;
     border-radius: 10px;
@@ -126,8 +127,8 @@
   }
 
   .playerdetails-img {
-    width: 200px;
-    height: 160px;
+    width: 220px;
+    height: 180px;
     float: left;
     margin-left: 20px;
     margin-right: 20px;
@@ -136,6 +137,7 @@
     border: 1px solid black;
     object-fit: cover;
     margin-top: 10px;
+    border: 2px solid black;
   }
   .btn-container {
     display: flex;
@@ -183,7 +185,7 @@
    
   }
 
-  .playerdetails-img:hover {
+  /* .playerdetails-img:hover {
     width: 320px;
     height: 280px;
     border-radius: 10px;
@@ -192,10 +194,106 @@
     object-fit: cover;
     animation: tilt-shaking 0.25s infinite;
     transition: all ease-in-out 250ms;
-  }
+  } */
 
   .btn-delete:hover {
     transition: all ease-in-out 150ms;
   }
 
+  .teams {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 18%; /* Each player takes up 20% of the container's width */
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--white);
+    border: 3px solid #9C0A07;
+    border-radius: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 20px;
+  }
+
+  .pos-hdr {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: bolder;
+    justify-content: center;
+    text-shadow: white;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    text-shadow:
+		-1px -1px 0 #fcf9f9,
+		1px -1px 0 #fcf9f9,
+		-1px 1px 0 #fcf9f9,
+		1px 1px 0 #fcf9f9;
+    font-size: 25px;
+    text-decoration: underline;
+    
+
+    
+  }
+
+  .myplayer-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly; 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1rem auto; 
+    max-width: auto; 
+  }
   
+  .myplayers {
+   display: flex;
+   flex-direction: row;
+    flex: 0 0 18%; /* Each player takes up 20% of the container's width */
+    /* margin: 10px; */
+    padding: 50px;
+    /* background-color: var(--white); */
+    /* margin-top: 0; */
+    border-radius: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  .playersdiv {
+    flex: 0 0 20%; /* Each player takes up 20% of the container's width */
+    margin: 7px;
+    padding: 50px;
+    background-color: var(--white);
+    border: 3px solid #9C0A07;
+    border-radius: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 20px;
+  }
+
+  .playersdiv:hover {
+    border: 3px solid black;
+    transform: scale(1.1); /* Scale the card to 110% of its original size */
+  }
+
+  .playersdetail {
+    margin: 0 auto; /* Horizontally center the element */
+    margin-top: 25px;
+    width: 1000px; /* Set a fixed width or adjust as needed */
+    padding: 20px;
+    background-color: var(--white);
+    border: 3px solid #9C0A07;
+    border-radius: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 20px;
+  }
+
+  .pos-player {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+  }

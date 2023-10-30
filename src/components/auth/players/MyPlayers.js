@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
 import "./Players.css"
 import { cutPlayer, getAllPlayers, getAllTeams } from "../../../services/playerService"
-import { Link, useNavigate } from "react-router-dom"
+import { Link  } from "react-router-dom"
 
 
 export const MyPlayers = ({ currentUser }) => {
 
-    const navigate = useNavigate()
+
     const [players, setPlayers] = useState([])
     const [myTeam, setMyTeam] = useState([])
     const [myPlayers, setMyPlayers] = useState([])
@@ -20,7 +20,7 @@ export const MyPlayers = ({ currentUser }) => {
         data()
     }, [])
 
-    
+
     useEffect(() => {
         const data = async () => {
             const teams = await getAllTeams()
@@ -39,7 +39,7 @@ export const MyPlayers = ({ currentUser }) => {
         }
     }, [myTeam, players])
 
-    
+
     const handlePlayerCut = (player) => {
         const noTeamForYou = {
             id: player.id,
@@ -57,7 +57,12 @@ export const MyPlayers = ({ currentUser }) => {
             setMyPlayers(updatedMyTeam)
         })
     }
-    
+
+    const qbs = myPlayers.filter((p) => p.position.name === "QB")
+    const rbs = myPlayers.filter((p) => p.position.name === "RB")
+    const wrs = myPlayers.filter((p) => p.position.name === "WR")
+    const tes = myPlayers.filter((p) => p.position.name === "TE")
+
     return (
         <div>
 
@@ -71,23 +76,91 @@ export const MyPlayers = ({ currentUser }) => {
                 )}
             </div>
 
-            <div className="player-container">
-                {myPlayers.map((p) => (
-                    <div className="players" key={p.id}>
-                        <img className="player-img" src={p.imageLink} alt="playerimg" />
-                        <Link to={`/allplayers/${p.id}`}>
-                            <div className="player-info player-title" player={p} >{p.name}</div>
-                        </Link>
-                        {p.teamId === currentUser.id ? (<button
-                                    className="btn btn-delete"
-                                    onClick={() => handlePlayerCut(p)}
+            <div className="myplayer-container">
+                <div className="pos-player">
+                    <h5 className="pos-hdr">Quarterbacks:</h5>
+                    <div className="myplayers">
+                    {qbs.map((p) => (
+                        <div className="playersdiv" key={p.id}>
+                            <img className="player-img" src={p.imageLink} alt="playerimg" />
+                            <Link to={`/allplayers/${p.id}`}>
+                                <div className="player-info player-title" player={p} >{p.name}</div>
+                            </Link>
+                            {p.teamId === currentUser.id ? (<button
+                                className="btn btn-delete"
+                                onClick={() => handlePlayerCut(p)}
 
-                                >
-                                    CUT PLAYER</button>) : ""
-                                }
+                            >
+                                CUT PLAYER</button>) : ""
+                            }
 
+                        </div>
+                    ))}
                     </div>
-                ))}
+                </div>
+                <div className="pos-player">
+                    <h5 className="pos-hdr">Runningbacks:</h5>
+                    <div className="myplayers">
+                    {rbs.map((p) => (
+                        <div className="playersdiv" key={p.id}>
+                            <img className="player-img" src={p.imageLink} alt="playerimg" />
+                            <Link to={`/allplayers/${p.id}`}>
+                                <div className="player-info player-title" player={p} >{p.name}</div>
+                            </Link>
+                            {p.teamId === currentUser.id ? (<button
+                                className="btn btn-delete"
+                                onClick={() => handlePlayerCut(p)}
+
+                            >
+                                CUT PLAYER</button>) : ""
+                            }
+
+                        </div>
+                    ))}
+                </div>
+                </div>
+                <div className="pos-player">
+                    <h5 className="pos-hdr">Wide Receivers:</h5>
+                    <div className="myplayers">
+                    {wrs.map((p) => (
+                        <div className="playersdiv" key={p.id}>
+                            <img className="player-img" src={p.imageLink} alt="playerimg" />
+                            <Link to={`/allplayers/${p.id}`}>
+                                <div className="player-info player-title" player={p} >{p.name}</div>
+                            </Link>
+                            {p.teamId === currentUser.id ? (<button
+                                className="btn btn-delete"
+                                onClick={() => handlePlayerCut(p)}
+
+                            >
+                                CUT PLAYER</button>) : ""
+                            }
+
+                        </div>
+                    ))}
+                </div>
+                </div>
+                <div className="pos-player">
+                    <h5 className="pos-hdr">Tight Ends:</h5>
+                    <div className="myplayers">
+                    {tes.map((p) => (
+                        <div className="playersdiv" key={p.id}>
+                            <img className="player-img" src={p.imageLink} alt="playerimg" />
+                            <Link to={`/allplayers/${p.id}`}>
+                                <div className="player-info player-title" player={p} >{p.name}</div>
+                            </Link>
+                            {p.teamId === currentUser.id ? (<button
+                                className="btn btn-delete"
+                                onClick={() => handlePlayerCut(p)}
+
+                            >
+                                CUT PLAYER</button>) : ""
+                            }
+
+                        </div>
+                    ))}
+                </div>
+                </div>
             </div>
         </div>
     )
