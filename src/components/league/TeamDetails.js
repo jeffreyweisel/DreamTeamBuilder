@@ -18,13 +18,17 @@ export const TeamDetails = () => {
         })
     }, [teamId])
 
+    
+    
+    
+    
     return (
 
         <div>
             <div>
 
-                <div className="team-hdr" key={team.id}>
-                    <header >{team.name}</header>
+                <div className="team-hdr-container" key={team.id}>
+                    <header className="team-hdr">{team?.name}</header>
                 </div>
 
             </div>

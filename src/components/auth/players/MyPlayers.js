@@ -53,7 +53,7 @@ export const MyPlayers = ({ currentUser }) => {
             collegeAttended: player.collegeAttended
         }
         cutPlayer(noTeamForYou).then(() => {
-            const updatedMyTeam = myPlayers.filter((p) => p.id !== player.id)  //checks that p.id that was cut is not = any of the players left on the team
+            const updatedMyTeam = myPlayers.filter((p) => p.id !== player.id)  //removes the player that was cut by setting players to updatedPlayers
             setMyPlayers(updatedMyTeam)
         })
     }
@@ -68,8 +68,8 @@ export const MyPlayers = ({ currentUser }) => {
 
             <div>
                 {myTeam ? (        //check for myTeam being defined = true
-                    <div className="team-hdr" key={myTeam.id}>
-                        <header >{myTeam.name}</header>
+                    <div className="team-hdr-container" key={myTeam.id}>
+                        <header className="team-hdr" >{myTeam.name}</header>
                     </div>
                 ) : (
                     ""
@@ -78,7 +78,7 @@ export const MyPlayers = ({ currentUser }) => {
 
             <div className="myplayer-container">
                 <div className="pos-player">
-                    <h5 className="pos-hdr">Quarterbacks:</h5>
+                    <h5 className="pos-hdr">Quarterbacks</h5>
                     <div className="myplayers">
                     {qbs.map((p) => (
                         <div className="playersdiv" key={p.id}>
@@ -99,7 +99,7 @@ export const MyPlayers = ({ currentUser }) => {
                     </div>
                 </div>
                 <div className="pos-player">
-                    <h5 className="pos-hdr">Runningbacks:</h5>
+                    <h5 className="pos-hdr">Runningbacks</h5>
                     <div className="myplayers">
                     {rbs.map((p) => (
                         <div className="playersdiv" key={p.id}>
@@ -120,7 +120,7 @@ export const MyPlayers = ({ currentUser }) => {
                 </div>
                 </div>
                 <div className="pos-player">
-                    <h5 className="pos-hdr">Wide Receivers:</h5>
+                    <h5 className="pos-hdr">Wide Receivers</h5>
                     <div className="myplayers">
                     {wrs.map((p) => (
                         <div className="playersdiv" key={p.id}>
@@ -141,7 +141,7 @@ export const MyPlayers = ({ currentUser }) => {
                 </div>
                 </div>
                 <div className="pos-player">
-                    <h5 className="pos-hdr">Tight Ends:</h5>
+                    <h5 className="pos-hdr">Tight Ends</h5>
                     <div className="myplayers">
                     {tes.map((p) => (
                         <div className="playersdiv" key={p.id}>

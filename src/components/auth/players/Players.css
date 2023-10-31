@@ -7,6 +7,18 @@
     margin: 1rem auto; 
     max-width: 1750px; 
   }
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1rem auto; 
+    max-width: 1750px; 
+    justify-content: center;
+    align-items: center;
+  }
   
   .players {
     flex: 0 0 18%; /* Each player takes up 20% of the container's width */
@@ -146,18 +158,28 @@
   }
   .team-hdr {
     font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
-    font-weight: bolder;
-    justify-content: center;
-    text-shadow: white;
-    margin-top: 20px;
+    font-size: 36px; /* Adjust font size to make it visually appealing */
+    font-weight: bold;
     text-align: center;
-    text-shadow:
-		-1px -1px 0 #fcf9f9,
-		1px -1px 0 #fcf9f9,
-		-1px 1px 0 #fcf9f9,
-		1px 1px 0 #fcf9f9;
-    font-size: 50px;
+    text-shadow: -1px -1px 0 #fcf9f9, 1px -1px 0 #fcf9f9, -1px 1px 0 #fcf9f9, 1px 1px 0 #fcf9f9;
+    margin: 40px 0; /* Adjust margin for spacing */
+    padding: 10px; /* Add padding for better readability */
+    color: #333; /* Change text color to make it more readable */
+    background-color: #f5f5f5; /* Add a background color for contrast */
+    border: 2px solid #ccc; /* Add a border for style */
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .team-hdr-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the header */
+    align-items: center; /* Vertically center the header */
+    
   }
 
   .team-img {
@@ -212,88 +234,74 @@
     padding-left: 4px;
     padding-right: 4px;
     padding-bottom: 20px;
+    width: 60%;
+    justify-content: center;
+    transition: transform 0.1s;
   }
 
   .pos-hdr {
     font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
-    font-weight: bolder;
-    justify-content: center;
-    text-shadow: white;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    font-size: 24px; /* Adjust font size to make it visually appealing */
+    font-weight: bold;
     text-align: center;
-    text-shadow:
-		-1px -1px 0 #fcf9f9,
-		1px -1px 0 #fcf9f9,
-		-1px 1px 0 #fcf9f9,
-		1px 1px 0 #fcf9f9;
-    font-size: 25px;
+    margin: 20px 0; /* Adjust margin for spacing */
     text-decoration: underline;
-    
-
-    
+    color:  black; /* Change text color for better readability */
   }
-
+  
   .myplayer-container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly; 
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 1rem auto; 
-    max-width: auto; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add some spacing between player cards */
   }
   
   .myplayers {
-   display: flex;
-   flex-direction: row;
-    flex: 0 0 18%; /* Each player takes up 20% of the container's width */
-    /* margin: 10px; */
-    padding: 50px;
-    /* background-color: var(--white); */
-    /* margin-top: 0; */
+    flex: 0 0 18%; /* Each player takes up 18% of the container's width */
+    margin: 10px;
+    padding: 10px;
+    /* background-color: #f5f5f5; */
+    /* border: 1px solid #ccc; */
     border-radius: 10px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 20px;
-    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
   }
-
+  
+  .myplayers:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
   .playersdiv {
-    flex: 0 0 20%; /* Each player takes up 20% of the container's width */
-    margin: 7px;
-    padding: 50px;
-    background-color: var(--white);
+    flex: 0 0 calc(50% - 20px); /* Each player takes up about a third of the container's width */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f5f5f5;
     border: 3px solid #9C0A07;
     border-radius: 10px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 20px;
+    text-align: center;
+    transition: transform 0.1s;
+    width: 280px;
+    height: 300px;
+    font-family: 'Courier New', Courier, monospace;
   }
-
+  
   .playersdiv:hover {
-    border: 3px solid black;
-    transform: scale(1.1); /* Scale the card to 110% of its original size */
+    transform: scale(1.01); /* Slightly scale up on hover */
   }
-
+  
   .playersdetail {
     margin: 0 auto; /* Horizontally center the element */
     margin-top: 25px;
-    width: 1000px; /* Set a fixed width or adjust as needed */
+    max-width: 50%; /* Adjust to your preferred width */
     padding: 20px;
-    background-color: var(--white);
+    background-color: #f5f5f5;
     border: 3px solid #9C0A07;
     border-radius: 10px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 20px;
+    text-align: center;
   }
-
+  
   .pos-player {
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center; /* Center player details horizontally */
   }

@@ -23,8 +23,8 @@ export const AdminNavBar = ({currentUser}) => {
     
     return (
         <ul className="navbar">
-            <li className="navbar-item">
-                {team?.name}
+            <li className="navbar-item teamname">
+                {team?.user?.name}
             </li>
             <li className="navbar-item">
                 <Link to="/allplayers">Players</Link>

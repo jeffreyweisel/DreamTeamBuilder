@@ -1,45 +1,65 @@
+/* Rest of your existing navbar CSS */
 .navbar {
   display: flex;
-  justify-content: flex-end; /* Align items to the right */
+  align-items: center;
+  justify-content: space-between; /* Change from space-evenly to space-between */
   background-color: #292929;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   margin: 0;
-  width: 100%;
-  padding: 0.5rem;
 }
 
+/* Logo or Team Name (Move it to the left) */
+.teamname {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: underline;
+  margin-right: auto; /* Push it to the left */
+}
+
+/* Navbar Items (Keep everything else as is) */
 .navbar-item {
-  display: inline-block;
-  margin-right: 70px; /* Adjust margin-right to control spacing between items */
   list-style-type: none;
-  padding-top: 14px;
-  color: var(--offWhite);
-  font-family: "Quicksand", sans-serif;
-  position: relative;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
 
-  
+.navbar-item a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  .navbar-logout {
-    margin-left: auto;
-  }
- 
-  .navbar-item::before {
-    content: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: var(--offWhite);
-    position: absolute;
-    top: 0;
-    width: 0;
-  }
+.navbar-item a:hover {
+  color: #fff;
+  border-radius: 5px;
+}
 
-  .navbar-item:hover::before {
-    width: 100%;
-    transition: all ease-in-out 300ms;
-  }
-  .logout:hover {
-    color: #9C0A07;
-  }
+/* Add this class to the last list item to control its margin */
+.navbar-item:last-child {
+  margin-right: 0;
+}
+
+/* Hover effect for underline on other items */
+.navbar-item:not(.teamname) a::after {
+  content: "";
+  display: block;
+  width: 0;
+  border-bottom: 2px solid #fff; /* Add an underline */
+  transition: width 0.3s;
+}
+
+.navbar-item:not(.teamname) a:hover::after {
+  width: 100%;
+}
+
+/* Hover effect for logout (if needed) */
+.logout:hover {
+  color: #9C0A07;
+}
