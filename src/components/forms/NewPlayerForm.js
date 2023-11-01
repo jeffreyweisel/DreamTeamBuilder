@@ -64,11 +64,11 @@ export const NewPlayerForm = () => {
         <form className="new-post">
             <h2>New Player</h2>
             <fieldset>
-                <div className="form-group">
+                <div className="radio">
                     {/* the radio button selector */}
                     <p>Position:</p>
                     {positions.map((p) => (
-                        <div key={p.id} className="radio">
+                        <div key={p.id}>
                             <label>
                                 <input
                                     type="radio"

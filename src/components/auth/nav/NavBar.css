@@ -1,32 +1,42 @@
-/* Rest of your existing navbar CSS */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Change from space-evenly to space-between */
+  justify-content: center;
   background-color: #292929;
   padding: 10px 20px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   margin: 0;
-}
-
-/* Logo or Team Name (Move it to the left) */
-.teamname {
+ }
+ 
+ .teamname {
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
   color: #fff;
   text-decoration: underline;
-  margin-right: auto; /* Push it to the left */
-}
-
-/* Navbar Items (Keep everything else as is) */
-.navbar-item {
+  margin-right: auto;
+  list-style-type: none;
+  color: #fff;
+  display: flex;
+  /* margin-left: 70px; */
+ 
+  
+ }
+ 
+ .navbar-items {
+  display: flex; /* Align items in a row */
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .navbar-item {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   color: #fff;
-}
+  margin-left: 20px; /* Add space between items */
+ }
 
 .navbar-item a {
   text-decoration: none;

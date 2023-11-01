@@ -18,10 +18,18 @@ export const TeamDetails = () => {
         })
     }, [teamId])
 
+
+    const qbs = team.players ? team.players.filter((player) => player.positionId === 1) : []
+    console.log("QBs",qbs)
+    const rbs = team.players ? team.players.filter((player) => player.positionId === 2) : []
+    console.log("RBs",rbs)
+    const wrs = team.players ? team.players.filter((player) => player.positionId === 3) : []
+    console.log("WRs",wrs)
+    const tes = team.players ? team.players.filter((player) => player.positionId === 4) : []
+    console.log("TEs",tes)
     
-    
-    
-    
+
+
     return (
 
         <div>
@@ -32,19 +40,67 @@ export const TeamDetails = () => {
                 </div>
 
             </div>
-            <div className="player-container">
-                {team?.players?.map((p) => (
-                    <div className="players" key={p.id}>
-                        <img className="player-img" src={p.imageLink} alt="playerimg" />
+            <div className="myplayer-container">
+                <div className="pos-player">
+                    <h5 className="pos-hdr">Quarterbacks</h5>
+                    <div className="myplayers">
+                    {qbs.map((p) => (
+                        <div className="playersdiv" key={p.id}>
+                            <img className="player-img" src={p.imageLink} alt="playerimg" />
+                            <Link to={`/allplayers/${p.id}`}>
+                                <div className="player-info player-title" player={p} >{p.name}</div>
+                            </Link>
+                           
 
-                        <Link to={`/allplayers/${p.id}`}>
-                            <div className="player-info player-title" player={p} >{p?.name}</div>
-                        </Link>
-
-
-
+                        </div>
+                    ))}
                     </div>
-                ))}
+                </div>
+                <div className="pos-player">
+                    <h5 className="pos-hdr">Runningbacks</h5>
+                    <div className="myplayers">
+                    {rbs.map((p) => (
+                        <div className="playersdiv" key={p.id}>
+                            <img className="player-img" src={p.imageLink} alt="playerimg" />
+                            <Link to={`/allplayers/${p.id}`}>
+                                <div className="player-info player-title" player={p} >{p.name}</div>
+                            </Link>
+                            
+
+                        </div>
+                    ))}
+                </div>
+                </div>
+                <div className="pos-player">
+                    <h5 className="pos-hdr">Wide Receivers</h5>
+                    <div className="myplayers">
+                    {wrs.map((p) => (
+                        <div className="playersdiv" key={p.id}>
+                            <img className="player-img" src={p.imageLink} alt="playerimg" />
+                            <Link to={`/allplayers/${p.id}`}>
+                                <div className="player-info player-title" player={p} >{p.name}</div>
+                            </Link>
+                            
+
+                        </div>
+                    ))}
+                </div>
+                </div>
+                <div className="pos-player">
+                    <h5 className="pos-hdr">Tight Ends</h5>
+                    <div className="myplayers">
+                    {tes.map((p) => (
+                        <div className="playersdiv" key={p.id}>
+                            <img className="player-img" src={p.imageLink} alt="playerimg" />
+                            <Link to={`/allplayers/${p.id}`}>
+                                <div className="player-info player-title" player={p} >{p.name}</div>
+                            </Link>
+                           
+
+                        </div>
+                    ))}
+                </div>
+                </div>
             </div>
         </div>
     )

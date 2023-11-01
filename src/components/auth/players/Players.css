@@ -10,15 +10,14 @@
   .team-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly; 
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 1rem auto; 
-    max-width: 1750px; 
     justify-content: center;
     align-items: center;
-  }
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1rem auto;
+    max-width: 1750px;
+    padding: 20px; /* Added padding for spacing */
+    background-color: var(--light-gray); /* Set a background color */
+}
   
   .players {
     flex: 0 0 18%; /* Each player takes up 20% of the container's width */
@@ -79,7 +78,7 @@
   .filter-bar {
     display: flex;
     flex-direction: row;
-    margin-left: 40px;
+    margin-left: 30px;
     
     /* background-color: #9C0A07;
     border-radius: 10px;
@@ -169,7 +168,7 @@
     border: 2px solid #ccc; /* Add a border for style */
     border-radius: 10px; /* Round the corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
-    width: 60%;
+    width: 40%;
     justify-content: center;
     align-items: center;
     
@@ -179,6 +178,7 @@
     display: flex;
     justify-content: center; /* Horizontally center the header */
     align-items: center; /* Vertically center the header */
+    text-align: center;
     
   }
 
@@ -207,7 +207,7 @@
    
   }
 
-  /* .playerdetails-img:hover {
+  .playerdetails-img:hover {
     width: 320px;
     height: 280px;
     border-radius: 10px;
@@ -216,7 +216,7 @@
     object-fit: cover;
     animation: tilt-shaking 0.25s infinite;
     transition: all ease-in-out 250ms;
-  } */
+  }
 
   .btn-delete:hover {
     transition: all ease-in-out 150ms;
@@ -225,29 +225,35 @@
   .teams {
     display: flex;
     flex-direction: column;
-    flex: 0 0 18%; /* Each player takes up 20% of the container's width */
+    flex: 0 0 66% ;/* Each team takes up the available space in the container */
     margin: 10px;
     padding: 20px;
     background-color: var(--white);
     border: 3px solid #9C0A07;
     border-radius: 10px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 20px;
-    width: 60%;
-    justify-content: center;
-    transition: transform 0.1s;
-  }
-
-  .pos-hdr {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 24px; /* Adjust font size to make it visually appealing */
-    font-weight: bold;
     text-align: center;
-    margin: 20px 0; /* Adjust margin for spacing */
-    text-decoration: underline;
-    color:  black; /* Change text color for better readability */
-  }
+    transition: transform 0.1s;
+    
+}
+
+.teams:hover {
+    transform: scale(1.05); /* Add a scaling effect on hover */
+}
+
+.teams img {
+    width: 100%; /* Ensure the image takes up the full width of the container */
+}
+
+.pos-hdr {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px; /* Adjust font size to make it visually appealing */
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0; /* Adjust margin for spacing */
+  text-decoration: underline;
+  color: black; /* Change text color for better readability on a grey background */
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; /* Add a white outline */
+}
   
   .myplayer-container {
     display: flex;
@@ -281,7 +287,7 @@
     text-align: center;
     transition: transform 0.1s;
     width: 280px;
-    height: 300px;
+    height: 260px;
     font-family: 'Courier New', Courier, monospace;
   }
   
