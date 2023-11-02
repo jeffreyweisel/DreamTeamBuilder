@@ -12,6 +12,7 @@ export const PlayerList = ({ currentUser }) => {
     const [selectedPosition, setSelectedPostition] = useState("")
     const [searchTerm, setSearchTerm] = useState("")
     const [freeAgents, setFreeAgents] = useState(false)
+    
 
     const navigate = useNavigate()
 
@@ -32,9 +33,11 @@ export const PlayerList = ({ currentUser }) => {
     useEffect(() => {
         if (searchTerm.length === 0) {
             setFilteredPlayers(players)
+            
         } else {
             const foundPlayers = players.filter((p) => p.name.toLowerCase().includes(searchTerm.toLowerCase()))
             setFilteredPlayers(foundPlayers)
+            
         }
     }, [searchTerm, players])
 
@@ -160,20 +163,26 @@ export const PlayerList = ({ currentUser }) => {
                             <div className="player-info player-body">{playerObj?.team?.name}</div>
                             <div className="btn-container">
                                 {playerObj.teamId === 0 ? (<button
-                                    className="btn btn-delete"
+                                    className="btn btn-primary"
                                     onClick={() => handlePlayerAddToTeam(playerObj)}
-
+                                    
                                 >
                                     ADD PLAYER</button>) : ""
                                 }
-                                {currentUser.id === 1 ? (<button
-                                    className="btn btn-delete"
-                                    onClick={() => handleDelete(playerObj)}
+                                {currentUser.id === 1 ? (
+                                    <button
+                                        className="btn btn-secondary"
+                                        onClick={() => {
+                                            const confirmDelete = window.confirm(`Are you sure you want to delete ${playerObj.name}? He's pretty good.`)
+                                            if (confirmDelete) {
+                                                handleDelete(playerObj)
+                                            }
+                                        }}
+                                    >
+                                        DELETE
+                                    </button>
+                                ) : ""}
 
-                                >
-                                    DELETE</button>) : ""
-                                }
-                                
 
                             </div>
                         </div>

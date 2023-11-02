@@ -65,11 +65,10 @@ export const NewPlayerForm = () => {
             <h2>New Player</h2>
             <fieldset>
                 <div className="radio">
-                    {/* the radio button selector */}
-                    <p>Position:</p>
-                    {positions.map((p) => (
-                        <div key={p.id}>
-                            <label>
+                    <p className="position-radio">Position:</p>
+                    <div className="buttons">
+                        {positions.map((p) => (
+                            <label key={p.id}>
                                 <input
                                     type="radio"
                                     name="selectedPosition"
@@ -79,8 +78,8 @@ export const NewPlayerForm = () => {
                                 />
                                 {p.name}
                             </label>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </fieldset>
             <fieldset>

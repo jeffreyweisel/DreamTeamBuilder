@@ -32,9 +32,8 @@ export const Login = () => {
     <main className="auth-container">
       <section>
         <form className="auth-form" onSubmit={handleLogin}>
-          <h1 className="header">Dream Team</h1>
-          <h2 className="header">Please sign in</h2>
-          <fieldset className="auth-fieldset">
+          <h1 className="header">Dream Team Login</h1>
+           <fieldset className="auth-fieldset">
             <div>
               <input
                 type="email"

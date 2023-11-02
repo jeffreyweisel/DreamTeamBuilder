@@ -41,9 +41,10 @@
 .navbar-item a {
   text-decoration: none;
   color: #fff;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px 20px;
   transition: background-color 0.3s, color 0.3s;
+  letter-spacing: 2px;
 }
 
 .navbar-item a:hover {

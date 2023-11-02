@@ -69,7 +69,8 @@ export const MyPlayers = ({ currentUser }) => {
             <div>
                 {myTeam ? (        //check for myTeam being defined = true
                     <div className="team-hdr-container" key={myTeam.id}>
-                        <header className="team-hdr" >{myTeam.name}</header>
+                        <header className="team-hdr" >{myTeam.name}
+                    </header>
                     </div>
                 ) : (
                     ""
@@ -86,13 +87,17 @@ export const MyPlayers = ({ currentUser }) => {
                             <Link to={`/allplayers/${p.id}`}>
                                 <div className="player-info player-title" player={p} >{p.name}</div>
                             </Link>
+                            <div className="btn-container">
                             {p.teamId === currentUser.id ? (<button
-                                className="btn btn-delete"
+                                className="btn btn-secondary"
                                 onClick={() => handlePlayerCut(p)}
 
                             >
                                 CUT PLAYER</button>) : ""
                             }
+
+                            </div>
+                            
 
                         </div>
                     ))}
@@ -107,13 +112,16 @@ export const MyPlayers = ({ currentUser }) => {
                             <Link to={`/allplayers/${p.id}`}>
                                 <div className="player-info player-title" player={p} >{p.name}</div>
                             </Link>
+                            <div className="btn-container">
                             {p.teamId === currentUser.id ? (<button
-                                className="btn btn-delete"
+                                className="btn btn-secondary"
                                 onClick={() => handlePlayerCut(p)}
 
                             >
                                 CUT PLAYER</button>) : ""
                             }
+
+                            </div>
 
                         </div>
                     ))}
@@ -128,13 +136,16 @@ export const MyPlayers = ({ currentUser }) => {
                             <Link to={`/allplayers/${p.id}`}>
                                 <div className="player-info player-title" player={p} >{p.name}</div>
                             </Link>
+                            <div className="btn-container">
                             {p.teamId === currentUser.id ? (<button
-                                className="btn btn-delete"
+                                className="btn btn-secondary"
                                 onClick={() => handlePlayerCut(p)}
 
                             >
                                 CUT PLAYER</button>) : ""
                             }
+
+                            </div>
 
                         </div>
                     ))}
@@ -149,13 +160,16 @@ export const MyPlayers = ({ currentUser }) => {
                             <Link to={`/allplayers/${p.id}`}>
                                 <div className="player-info player-title" player={p} >{p.name}</div>
                             </Link>
+                            <div className="btn-container">
                             {p.teamId === currentUser.id ? (<button
-                                className="btn btn-delete"
+                                className="btn btn-secondary"
                                 onClick={() => handlePlayerCut(p)}
 
                             >
                                 CUT PLAYER</button>) : ""
                             }
+
+                            </div>
 
                         </div>
                     ))}
