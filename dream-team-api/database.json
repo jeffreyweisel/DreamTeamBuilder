@@ -56,13 +56,13 @@
       "collegeAttended": "Texas Tech University"
     },
     {
-      "id": 6,
       "name": "Emmitt Smith",
-      "teamId": 0,
-      "positionId": 2,
       "height": "5'9\"",
       "weight": 210,
       "fortyTime": "4.71 seconds",
+      "positionId": 2,
+      "teamId": 2,
+      "id": 6,
       "imageLink": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/qbe0mor3xebl2am8xve2",
       "collegeAttended": "University of Florida"
     },
@@ -281,7 +281,7 @@
       "weight": "234",
       "fortyTime": "4.41",
       "positionId": 2,
-      "teamId": 2,
+      "teamId": 1,
       "id": 29,
       "imageLink": "https://www.nj.com/resizer/9sgKM3fS-8abGdh8cqAhbKcOY-4=/arc-anglerfish-arc2-prod-advancelocal/public/FDNHWJ2ERNHKFHJEZONWXOX73Y.jpg",
       "collegeAttended": "Pennsylvania State University"
@@ -408,17 +408,6 @@
       "id": 46
     },
     {
-      "name": "Larry Fitzgerald",
-      "height": "6'3",
-      "weight": "218",
-      "fortyTime": "4.48",
-      "positionId": 3,
-      "teamId": 3,
-      "id": 50,
-      "imageLink": "https://static.profootballnetwork.com/wp-content/uploads/2021/03/15205750/larry-fitzgerald-rumors-will-he-sign-with-new-team-or-retire-2021-e1616078777416.jpg",
-      "collegeAttended": "Pittsburgh"
-    },
-    {
       "name": "Antonio Gates",
       "height": "6'4",
       "weight": "255",
@@ -463,26 +452,37 @@
       "collegeAttended": "Stanford University"
     },
     {
+      "id": 55,
       "name": "Derrick Henry",
+      "teamId": 0,
+      "positionId": 2,
       "height": "6'3",
       "weight": "247",
       "fortyTime": "4.54",
-      "positionId": 2,
-      "teamId": 1,
-      "id": 55,
       "imageLink": "https://cdn.theathletic.com/app/uploads/2023/07/30141929/GettyImages-1450157824-scaled.jpg",
       "collegeAttended": "Alabama"
     },
     {
-      "id": 56,
       "name": "Bijan Robinson",
-      "teamId": 0,
-      "positionId": 2,
       "height": "5'11\"",
       "weight": "216",
       "fortyTime": "4.46",
+      "positionId": 2,
+      "teamId": 2,
+      "id": 56,
       "imageLink": "https://wehco.media.clients.ellingtoncms.com/imports/adg/photos/103001053_103001053-3258bf60eb174c8093eba7c7b6388058_t800.jpg?90232451fbcadccc64a17de7521d859a8f88077d",
       "collegeAttended": "Texas"
+    },
+    {
+      "name": "Cooper Kupp",
+      "height": "6'2\"",
+      "weight": "194",
+      "fortyTime": "4.4",
+      "teamId": 0,
+      "positionId": 3,
+      "imageLink": "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MjAxMjU5OTcxOTU2OTc0ODYz/usatsi_20894148.jpg",
+      "collegeAttended": "Eastern WA",
+      "id": 57
     }
   ],
   "positions": [

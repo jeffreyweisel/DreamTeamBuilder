@@ -266,6 +266,9 @@
   text-decoration: underline;
   color: black; /* Change text color for better readability on a grey background */
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; /* Add a white outline */
+background-color:  var(--white);
+padding: 10px;
+border-radius: 10px;
 }
   
   .myplayer-container {
