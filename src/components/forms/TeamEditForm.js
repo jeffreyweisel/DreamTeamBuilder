@@ -20,7 +20,6 @@ export const TeamEditForm = ({ currentUser }) => {
 
     const handleSave = (event) => {
         event.preventDefault()
-        console.log('Clicked')
 
         const editedTeam = {
             id: team.id,

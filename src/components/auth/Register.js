@@ -7,7 +7,7 @@ export const Register = (props) => {
   const [user, setUser] = useState({
     email: "",
     name: "",
-    isAdmin: false
+    isAdmin: false,
     
   })
   let navigate = useNavigate()
@@ -15,16 +15,17 @@ export const Register = (props) => {
   const registerNewUser = () => {
     const newUser = {
       ...user,
-      cohort: parseInt(user.cohort),
+      
     }
 
     createUser(newUser).then((createdUser) => {
       if (createdUser.hasOwnProperty("id")) {
         localStorage.setItem(
-          "learning_user",
+          "dreams_user",
           JSON.stringify({
             id: createdUser.id,
-            staff: createdUser.isStaff,
+            admin: createdUser.isAdmin,
+            teamId: createUser.id
           })
         )
 

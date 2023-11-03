@@ -20,13 +20,9 @@ export const TeamDetails = () => {
 
 
     const qbs = team.players ? team.players.filter((player) => player.positionId === 1) : []
-    console.log("QBs",qbs)
     const rbs = team.players ? team.players.filter((player) => player.positionId === 2) : []
-    console.log("RBs",rbs)
     const wrs = team.players ? team.players.filter((player) => player.positionId === 3) : []
-    console.log("WRs",wrs)
     const tes = team.players ? team.players.filter((player) => player.positionId === 4) : []
-    console.log("TEs",tes)
     
 
 

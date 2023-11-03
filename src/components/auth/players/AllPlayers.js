@@ -93,7 +93,6 @@ export const PlayerList = ({ currentUser }) => {
 
         addPlayerToTeam(newPlayerTeam)
             .then(() => {
-                console.log(newPlayerTeam)
                 navigate('/myplayers')
             })
     }

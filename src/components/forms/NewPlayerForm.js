@@ -26,7 +26,6 @@ export const NewPlayerForm = () => {
         // Fetch all topics
         getAllPositions().then((pArray) => {
             setPositions(pArray)
-            console.log(pArray)
         })
 
     }, [])
