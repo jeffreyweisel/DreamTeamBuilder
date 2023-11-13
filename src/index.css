@@ -1,16 +1,7 @@
-/* Import the google web fonts you want to use */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand&family=Roboto:wght@100&display=swap");
 
-/* FONTS
-font-family: "Nunito", sans-serif;
-font-family: "Quicksand", sans-serif;
-font-family: "Roboto", sans-serif; 
-*/
-
-/* COLOR PALETTE */
-/* Feel free to change these values and create your own color palette! https://coolors.co/ is a great resource */
 :root {
-  --primary: #9C0A07;
+  --primary: #9c0a07;
   --secondary: #292929;
   --info: #7fb800;
   --warning: #f6511d;
@@ -21,13 +12,12 @@ font-family: "Roboto", sans-serif;
   --appBackground: #707070;
 }
 
-/* GLOBAL STYLES */
 body,
 button,
 input,
 select,
 textarea {
-  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -44,21 +34,19 @@ h6 {
   font-family: "Roboto", serif;
 }
 
-/* This prevents all the links in the app from having default underline */
 a {
   text-decoration: none;
   color: inherit;
 }
-/* This prevents all the links in the app from turning purple after visiting */
+
 a:visited {
   color: inherit;
 }
-/* This prevents all the inputs in the app from having that blue outline when in focus */
+
 input:focus {
   outline: none;
 }
 
-/* GLOBAL STYLING FOR ALL THE BUTTONS BUTTONS */
 button {
   padding: 0.5rem 1rem;
   border: 1px solid transparent;
@@ -67,23 +55,13 @@ button {
   cursor: pointer;
 }
 
-/* These are all the color options for the buttons */
-/* If you change the color variables, be sure to change the hover colors to be a darker shade of the colors you chose*/
 .btn-primary {
   background-color: var(--primary);
 }
 
-/* .btn-primary:hover {
-  background-color: #e5a000;
-} */
-
 .btn-secondary {
   background-color: var(--secondary);
 }
-
-/* .btn-secondary:hover {
-  background-color: #9C0A07;
-} */
 
 .btn-warning {
   background-color: var(--warning);
@@ -101,7 +79,6 @@ button {
   background-color: #71a500;
 }
 
-/* This CSS can be deleted. It is only used for the first chapter */
 .welcome {
   text-align: center;
   margin: 5rem 14rem;

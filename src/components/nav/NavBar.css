@@ -17,13 +17,13 @@
   list-style-type: none;
   color: #fff;
   display: flex;
-  /* margin-left: 70px; */
+  
  
   
  }
  
  .navbar-items {
-  display: flex; /* Align items in a row */
+  display: flex; 
   align-items: center;
   justify-content: center;
  }
@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   color: #fff;
-  margin-left: 20px; /* Add space between items */
+  margin-left: 20px; 
  }
 
 .navbar-item a {
@@ -52,17 +52,17 @@
   border-radius: 5px;
 }
 
-/* Add this class to the last list item to control its margin */
+
 .navbar-item:last-child {
   margin-right: 0;
 }
 
-/* Hover effect for underline on other items */
+
 .navbar-item:not(.teamname) a::after {
   content: "";
   display: block;
   width: 0;
-  border-bottom: 2px solid #fff; /* Add an underline */
+  border-bottom: 2px solid #fff; 
   transition: width 0.3s;
 }
 
@@ -70,7 +70,6 @@
   width: 100%;
 }
 
-/* Hover effect for logout (if needed) */
 .logout:hover {
   color: #9C0A07;
 }

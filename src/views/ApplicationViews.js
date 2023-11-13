@@ -1,23 +1,20 @@
-import { useEffect, useState } from "react"
-import { AdminView } from "./AdminView"
-import { NonAdminView } from "./NonAdminView"
-
+import { useEffect, useState } from "react";
+import { AdminView } from "./AdminView";
+import { NonAdminView } from "./NonAdminView";
 
 export const ApplicationViews = () => {
+  const [currentUser, setCurrentUser] = useState({});
 
-    const [currentUser, setCurrentUser] = useState({})
+  useEffect(() => {
+    const localDreamUser = localStorage.getItem("dreams_user");
+    const dreamUserObject = JSON.parse(localDreamUser);
 
-    useEffect(() => {
-        const localDreamUser = localStorage.getItem("dreams_user")
-        const dreamUserObject = JSON.parse(localDreamUser)
+    setCurrentUser(dreamUserObject);
+  }, []);
 
-        setCurrentUser(dreamUserObject)
-    }, [])
-
-
-    return currentUser.id === 1 ?
-    (<AdminView currentUser={currentUser} />
-    ) : (
-      <NonAdminView currentUser={currentUser}/>
-    )
-}
+  return currentUser.id === 1 ? (
+    <AdminView currentUser={currentUser} />
+  ) : (
+    <NonAdminView currentUser={currentUser} />
+  );
+};

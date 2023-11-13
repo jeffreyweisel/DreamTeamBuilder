@@ -1,0 +1,339 @@
+.player-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  margin: 1rem auto;
+  max-width: 1750px;
+  animation: fadeInUp 1s ease;
+}
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  margin: 1rem auto;
+  max-width: 1750px;
+  padding: 20px;
+  background-color: var(--light-gray);
+}
+
+.players {
+  flex: 0 0 18%;
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--white);
+  border: 3px solid #9c0a07;
+  border-radius: 10px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 20px;
+}
+
+.player-title {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.player-body {
+  margin-bottom: 15px;
+
+  text-transform: capitalize;
+}
+
+.player-search {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+
+.player-select,
+.player-input {
+  margin-top: 15px;
+  font-size: 1rem;
+  border: 2px solid #9c0a07;
+  border-radius: 0.25rem;
+  margin-left: 40px;
+  border-radius: 10px;
+  justify-content: right;
+  padding: 15px;
+}
+
+.player-h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  font-size: 50px;
+  text-decoration: underline;
+  padding: 20px;
+}
+
+.filter-bar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 36px;
+}
+
+.players-info {
+  font-family: "Courier New", Courier, monospace;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.player-header {
+  font-size: larger;
+  font-weight: bolder;
+  justify-content: center;
+  text-shadow: white;
+}
+
+.player {
+  align-items: center;
+}
+
+.btn {
+  width: 150px;
+  height: 39px;
+}
+
+.player-title:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all ease-in-out 150ms;
+}
+
+.btn-delete {
+  background-color: var(--white);
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.player-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  object-fit: cover;
+  transition: all ease-in-out 150ms;
+}
+
+.playerdetails-img {
+  width: 220px;
+  height: 180px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  object-fit: cover;
+  margin-top: 10px;
+  border: 2px solid black;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  margin-top: 30px;
+}
+
+.btn-container button {
+  margin: 5px 0;
+}
+.team-hdr {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: -1px -1px 0 #fcf9f9, 1px -1px 0 #fcf9f9, -1px 1px 0 #fcf9f9,
+    1px 1px 0 #fcf9f9;
+  margin: 40px 0;
+  padding: 10px;
+  color: #333;
+  background-color: #f5f5f5;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-hdr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.team-img {
+  height: 150px;
+  width: 200px;
+}
+
+.player-pos {
+  font-weight: bold;
+  font-size: large;
+}
+
+.freeagent-btn {
+  margin-top: 15px;
+  width: 172px;
+  height: 58px;
+  margin-top: 15px;
+  font-size: 1rem;
+
+  border-radius: 0.25rem;
+  margin-left: 40px;
+  border-radius: 10px;
+  justify-content: right;
+  padding: 15px;
+}
+
+.playerdetails-img:hover {
+  width: 320px;
+  height: 280px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 3px solid black;
+  object-fit: cover;
+  animation: tilt-shaking 0.25s infinite;
+  transition: all ease-in-out 250ms;
+}
+
+.btn-delete:hover {
+  transition: all ease-in-out 150ms;
+}
+
+.teams {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 66%;
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--white);
+  border: 3px solid #9c0a07;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.1s;
+  animation: fadeInUp 1s ease;
+}
+
+.teams:hover {
+  transform: scale(1.05);
+}
+
+.teams img {
+  width: 100%;
+}
+
+.pos-hdr {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  text-decoration: underline;
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.myplayer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.myplayers {
+  flex: 0 0 18%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.myplayers:hover {
+  transform: scale(1.05);
+}
+
+.playersdiv {
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 3px solid #9c0a07;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.1s;
+  width: 280px;
+  height: 300px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.playersdiv:hover {
+  transform: scale(1.01);
+}
+
+.playersdetail {
+  margin: 0 auto;
+  margin-top: 25px;
+  max-width: 50%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 3px solid #9c0a07;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.pos-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.allplayers-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.headerboi {
+  color: #9c0a07;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
