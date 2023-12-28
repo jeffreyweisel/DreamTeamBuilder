@@ -4,7 +4,7 @@ import { Welcome } from "../components/welcome/Welcome";
 import { PlayerList } from "../components/players/AllPlayers";
 import { PlayerDetails } from "../components/players/PlayerDetails";
 import { MyPlayers } from "../components/players/MyPlayers";
-import { NonAdminNavBar } from "../components/auth/nav/NonAdminNav";
+import { NonAdminNavBar } from "../components/nav/NonAdminNav";
 import { League } from "../components/league/League";
 import { TeamDetails } from "../components/league/TeamDetails";
 

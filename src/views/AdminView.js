@@ -1,6 +1,6 @@
 import { Outlet, Route, Routes } from "react-router-dom";
 import { TeamEditForm } from "../components/forms/TeamEditForm";
-import { AdminNavBar } from "../components/auth/nav/AdminNavBar";
+import { AdminNavBar } from "../components/nav/AdminNavBar";
 import { Welcome } from "../components/welcome/Welcome";
 import { PlayerList } from "../components/players/AllPlayers";
 import { PlayerDetails } from "../components/players/PlayerDetails";
